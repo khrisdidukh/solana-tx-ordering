@@ -1,0 +1,21 @@
+# One command:            docker compose up            -> mainnet DRY-RUN (nothing is sent)
+# Live (spends up to cap): LIVE=1 YES=1 docker compose up
+services:
+  ordering:
+    build: .
+    command: ["run"]
+    environment:
+      RPC_URL: ${RPC_URL:-https://api.mainnet-beta.solana.com}
+      SEND_RPC_URL: ${SEND_RPC_URL:-}
+      LIVE: ${LIVE:-0}
+      YES: ${YES:-0}
+      MAX_SPEND_SOL: ${MAX_SPEND_SOL:-0.05}
+      PER_CLIENT: ${PER_CLIENT:-2}
+      WINDOWS_PER_VALIDATOR: ${WINDOWS_PER_VALIDATOR:-4}
+      SEED: ${SEED:-20261030}
+      KEYPAIR: /app/keys/wallet.json
+      KEYS_DIR: /app/keys
+      DATA_DIR: /app/data
+    volumes:
+      - ./keys:/app/keys
+      - ./data:/app/data
