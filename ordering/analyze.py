@@ -99,30 +99,49 @@ def load_blocks(run_dir):
 
 
 def verdict(tp, pp, ts, ps, n):
+    """p < 0.01 = evidence, 0.01 <= p < 0.05 = weak evidence (reported, not claimed)."""
     if n == 0:
         return "no data (no block contained 2+ of our probes)"
-    sp = pp < 0.01 and tp > 0
-    ss = ps < 0.01 and ts > 0
-    if sp and not ss:
-        s = "strict" if tp >= 0.9 else "strong" if tp >= 0.6 else "partial"
-        return f"priority-fee order ({s}, tau={tp:.2f})"
-    if ss and not sp:
-        s = "strict" if ts >= 0.9 else "strong" if ts >= 0.6 else "partial"
-        return f"arrival order ({s}, tau={ts:.2f})"
+    def strength(t):
+        return "strict" if t >= 0.9 else "strong" if t >= 0.6 else "partial"
+    sp, ss = pp < 0.01 and tp > 0, ps < 0.01 and ts > 0
+    wp, ws = pp < 0.05 and not sp, ps < 0.05 and not ss
     if sp and ss:
         return f"mixed: fee (tau={tp:.2f}) and arrival (tau={ts:.2f}) both matter"
+    if sp:
+        return f"priority-fee order ({strength(tp)}, tau={tp:.2f})"
+    if ss:
+        return f"arrival order ({strength(ts)}, tau={ts:.2f})"
+    weak = [f"{name} tau={t:.2f}, p={p:.3f}" for name, t, p, w in
+            (("fee", tp, pp, wp), ("arrival", ts, ps, ws)) if w]
+    if weak:
+        return "weak evidence only (" + "; ".join(weak) + ")"
     if n < 5:
         return f"inconclusive (only {n} blocks with 2+ probes)"
     return "no rule detected - consistent with noise"
 
 
-def analyze(run_dir, log=print):
-    probes = read_jsonl(os.path.join(run_dir, "probes.jsonl"))
-    batches = {b["batch"]: b for b in read_jsonl(os.path.join(run_dir, "batches.jsonl"))
-               if "batch" in b}
-    blocks = load_blocks(run_dir)
-    st_path = os.path.join(run_dir, "statuses.json")
-    statuses = json.load(open(st_path)) if os.path.exists(st_path) else {}
+def _load_runs(run_dirs):
+    """Merge one or more run directories; batch ids become '<run>:<batch>'."""
+    probes, batches, blocks, statuses = [], {}, {}, {}
+    for d in run_dirs:
+        tag = os.path.basename(os.path.normpath(d))
+        for p in read_jsonl(os.path.join(d, "probes.jsonl")):
+            probes.append({**p, "batch": f"{tag}:{p['batch']}", "run": tag})
+        for b in read_jsonl(os.path.join(d, "batches.jsonl")):
+            if "batch" in b:
+                batches[f"{tag}:{b['batch']}"] = {**b, "run": tag}
+        blocks.update(load_blocks(d))
+        st_path = os.path.join(d, "statuses.json")
+        if os.path.exists(st_path):
+            statuses.update(json.load(open(st_path)))
+    return probes, batches, blocks, statuses
+
+
+def analyze(run_dir, log=print, extra_runs=(), out_dir=None):
+    """Analyse `run_dir` (plus `extra_runs`, pooled) and write to `out_dir`
+    (default: <run_dir>/analysis)."""
+    probes, batches, blocks, statuses = _load_runs([run_dir, *extra_runs])
 
     # where each probe ended up (verified against the fetched block, not only the status)
     pos_of = {}
@@ -144,7 +163,7 @@ def analyze(run_dir, log=print):
         elif statuses.get(sig):
             slot = statuses[sig]["slot"]
             where = "landed_block_not_fetched"
-        landing_rows.append({**{k: p[k] for k in ("batch", "probe", "group", "cu_price", "send_rank",
+        landing_rows.append({**{k: p[k] for k in ("run", "batch", "probe", "group", "cu_price", "send_rank",
                                                   "client", "leader", "window_start", "signature")},
                              "landed": where, "slot": slot, "slot_in_window": (slot - ws) if slot else None,
                              "pos": pos, "block_n_tx": ntx, "block_leader": leader,
@@ -200,10 +219,13 @@ def analyze(run_dir, log=print):
     per_client = {}
     for cl in sorted({r["client"] for r in landing_rows}):
         sub = {k: v for k, v in by_block.items() if per_val[k[0]]["client"] == cl}
+        subw = {k: v for k, v in window_groups.items() if per_val[k[0]]["client"] == cl}
         t = tests(sub, "IND")
         tc = tests(sub, "CONF")
+        tw = tests(subw, None, across_window=True)
         per_client[cl] = {"validators": sum(v["client"] == cl for v in per_val.values()),
-                          "independent": t, "conflicting": tc,
+                          "independent": t, "conflicting": tc, "across_window": tw,
+                          "verdict_across_window": verdict(tw["tau_fee"], tw["p_fee"], tw["tau_send"], tw["p_send"], tw["n_blocks"]),
                           "verdict_independent": verdict(t["tau_fee"], t["p_fee"], t["tau_send"], t["p_send"], t["n_blocks"]),
                           "verdict_conflicting": verdict(tc["tau_fee"], tc["p_fee"], tc["tau_send"], tc["p_send"], tc["n_blocks"])}
 
@@ -253,10 +275,19 @@ def analyze(run_dir, log=print):
                             "median_tip_rel_pos": med([r["tip_median_rel_pos"] for r in rs])}
                        for cl, rs in sorted(pas_client.items())}
 
+    # timing: in which slot of the 4-slot window probes land, per run
+    slot_dist = collections.defaultdict(collections.Counter)
+    for r in landing_rows:
+        if r["landed"] == "target_window":
+            slot_dist[r["run"]][r["slot_in_window"]] += 1
+        elif r["landed"] == "other_leader" and r["slot"]:
+            slot_dist[r["run"]]["after_window" if r["slot"] >= r["window_start"] + 4 else "before_window"] += 1
+
     out = {"per_validator": per_val, "per_client": per_client,
+           "slot_in_window_by_run": {k: dict(sorted(v.items(), key=str)) for k, v in slot_dist.items()},
            "landing_by_fee_level": {f"{g}:{p}": dict(c) for (g, p), c in sorted(by_level.items())},
            "passive_by_client": passive_summary}
-    adir = os.path.join(run_dir, "analysis")
+    adir = out_dir or os.path.join(run_dir, "analysis")
     os.makedirs(adir, exist_ok=True)
     with open(os.path.join(adir, "results.json"), "w") as f:
         json.dump(out, f, indent=1)

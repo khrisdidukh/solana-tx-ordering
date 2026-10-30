@@ -17,28 +17,38 @@ def _p(x):
     return "<0.001" if x < 0.001 else f"{x:.3f}"
 
 
-def write(run_dir):
-    res = json.load(open(os.path.join(run_dir, "analysis", "results.json")))
-    meta = json.load(open(os.path.join(run_dir, "run_meta.json")))
-    batches = read_jsonl(os.path.join(run_dir, "batches.jsonl"))
-    skipped = json.load(open(os.path.join(run_dir, "skipped_slots.json"))) \
-        if os.path.exists(os.path.join(run_dir, "skipped_slots.json")) else []
-    spend = os.path.join(run_dir, "spend_actual.json")
-    spend = json.load(open(spend)) if os.path.exists(spend) else None
-
+def write(run_dir, extra_runs=(), out_dir=None):
+    """REPORT.md for one run, or for several pooled runs (out_dir given)."""
+    runs = [run_dir, *extra_runs]
+    adir = os.path.join(out_dir, "analysis") if out_dir else os.path.join(run_dir, "analysis")
+    res = json.load(open(os.path.join(adir, "results.json")))
     L = []
-    L.append(f"# Run report — {meta['started_utc']} ({'LIVE mainnet' if meta['live'] else 'DRY-RUN'})\n")
-    L.append(f"- RPC: `{meta['rpc']}` (node {meta['rpc_version'].get('solana-core')}), send path: `{meta['send_rpc']}`")
-    L.append(f"- Epoch {meta['epoch']['epoch']}, first planned slot ≈ {meta['epoch']['absoluteSlot']}")
-    L.append(f"- Probe: CU limit {meta['cu_limit']}, priority levels (µlamports/CU) {meta['levels']}, seed {meta['seed']}")
-    sent = [b for b in batches if b.get("status") in ("sent", "dry_run")]
-    if sent:
-        L.append(f"- Batches fired: {len(sent)}; skipped (late): {sum(b.get('status')=='skipped_late' for b in batches)}")
-        L.append(f"- Measured slot time during run: {_f(sum(b['slot_time_ms'] for b in sent)/len(sent),0)} ms")
-    if spend:
-        L.append(f"- Actual spend: {spend['actual_spend_lamports']/1e9:.6f} SOL "
-                 f"(worst-case ledger {spend['ledger_worst_case_lamports']/1e9:.6f} SOL, cap {meta['max_spend_sol']} SOL)")
-    L.append(f"- Unavailable slots (skipped by leader or not served): {len(skipped)}\n")
+    L.append("# Run report — " + ", ".join(os.path.basename(os.path.normpath(r)) for r in runs) + "\n")
+    for rd in runs:
+        meta = json.load(open(os.path.join(rd, "run_meta.json")))
+        batches = read_jsonl(os.path.join(rd, "batches.jsonl"))
+        sk = os.path.join(rd, "skipped_slots.json")
+        skipped = json.load(open(sk)) if os.path.exists(sk) else []
+        sp = os.path.join(rd, "spend_actual.json")
+        spend = json.load(open(sp)) if os.path.exists(sp) else None
+        sent = [b for b in batches if b.get("status") in ("sent", "dry_run")]
+        L.append(f"### {os.path.basename(os.path.normpath(rd))} ({'LIVE mainnet' if meta['live'] else 'DRY-RUN'})")
+        L.append(f"- Started {meta['started_utc']} UTC; epoch {meta['epoch']['epoch']}, first planned slot ≈ {meta['epoch']['absoluteSlot']}")
+        L.append(f"- RPC `{meta['rpc']}` (node {meta['rpc_version'].get('solana-core')}); send path `{meta['send_rpc']}`; "
+                 f"send offset {meta.get('send_offset_slots', 0)} slot(s) from window start")
+        L.append(f"- Probe: CU limit {meta['cu_limit']}, priority levels (µlamports/CU) {meta['levels']}, seed {meta['seed']}")
+        if sent:
+            L.append(f"- Batches fired: {len(sent)}; skipped (late): {sum(b.get('status')=='skipped_late' for b in batches)}; "
+                     f"measured slot time {_f(sum(b['slot_time_ms'] for b in sent)/len(sent),0)} ms")
+        if spend:
+            L.append(f"- Actual spend: {spend['actual_spend_lamports']/1e9:.6f} SOL "
+                     f"(worst-case ledger {spend['ledger_worst_case_lamports']/1e9:.6f} SOL, cap {meta['max_spend_sol']} SOL)")
+        L.append(f"- Unavailable slots (skipped by leader or not served): {len(skipped)}\n")
+    if res.get("slot_in_window_by_run"):
+        L.append("Where probes landed relative to the target window (slot 0 = first slot of the window):\n")
+        for run, d in res["slot_in_window_by_run"].items():
+            L.append(f"- `{run}`: " + ", ".join(f"{k}: {v}" for k, v in d.items()))
+        L.append("")
 
     pv = res["per_validator"]
     if pv:
@@ -53,13 +63,22 @@ def write(run_dir):
                      f"{r['landed_other_leader']} | {r['not_landed']} | {a['n_blocks']} | "
                      f"{_f(a['tau_fee'])} ({_p(a['p_fee'])}) | {_f(a['tau_send'])} ({_p(a['p_send'])}) | "
                      f"{r['verdict_independent']} | {r['verdict_conflicting']} |")
+        L.append("\n### Across the whole window (probes of one batch ordered by slot, then position)\n")
+        L.append("| validator | client | windows | τ fee (p) | τ send (p) |")
+        L.append("|---|---|---|---|---|")
+        for ld, r in sorted(pv.items(), key=lambda x: x[1]["client"]):
+            w = r["across_window"]
+            L.append(f"| `{ld[:8]}…` | {r['client']} | {w['n_blocks']} | {_f(w['tau_fee'])} ({_p(w['p_fee'])}) | "
+                     f"{_f(w['tau_send'])} ({_p(w['p_send'])}) |")
         L.append("\n## Per client family (independent probes pooled)\n")
-        L.append("| client | validators | blocks | τ fee (p) | τ send (p) | verdict | conflicting-probe verdict |")
-        L.append("|---|---|---|---|---|---|---|")
+        L.append("| client | validators | blocks | τ fee (p) | τ send (p) | verdict (independent) | verdict (conflicting) | across window: τ fee / τ send (p) |")
+        L.append("|---|---|---|---|---|---|---|---|")
         for cl, r in res["per_client"].items():
             a = r["independent"]
+            w = r.get("across_window") or {}
             L.append(f"| {cl} | {r['validators']} | {a['n_blocks']} | {_f(a['tau_fee'])} ({_p(a['p_fee'])}) | "
-                     f"{_f(a['tau_send'])} ({_p(a['p_send'])}) | {r['verdict_independent']} | {r['verdict_conflicting']} |")
+                     f"{_f(a['tau_send'])} ({_p(a['p_send'])}) | {r['verdict_independent']} | {r['verdict_conflicting']} | "
+                     f"{_f(w.get('tau_fee'))} ({_p(w.get('p_fee'))}) / {_f(w.get('tau_send'))} ({_p(w.get('p_send'))}) |")
         L.append("\n## Landing by priority level\n")
         L.append("| group:µlamports/CU | target window | other leader | not landed | other |")
         L.append("|---|---|---|---|---|")
@@ -79,5 +98,5 @@ def write(run_dir):
     L.append("\nFiles: `probes.jsonl` (every probe: signature, fee level, send order, send/ack time), "
              "`statuses.json`, `blocks/<slot>.json.gz` (block order of every transaction + full JSON of our probes), "
              "`analysis/probe_landing.csv`, `analysis/passive_blocks.csv`, `analysis/results.json`.")
-    with open(os.path.join(run_dir, "REPORT.md"), "w") as f:
+    with open(os.path.join(out_dir or run_dir, "REPORT.md"), "w") as f:
         f.write("\n".join(L) + "\n")

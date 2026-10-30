@@ -28,8 +28,10 @@ def env(k, d):
 
 def args():
     ap = argparse.ArgumentParser(prog="ordering")
-    ap.add_argument("cmd", choices=["keygen", "wallet", "plan", "run", "collect", "analyze", "sweep"])
+    ap.add_argument("cmd", choices=["keygen", "wallet", "plan", "run", "collect", "analyze", "sweep", "combine"])
     ap.add_argument("run_dir", nargs="?")
+    ap.add_argument("more_runs", nargs="*", help="combine: further run directories")
+    ap.add_argument("--out", default=env("OUT_DIR", "data/combined"), help="combine: output directory")
     ap.add_argument("--rpc", default=env("RPC_URL", "https://api.mainnet-beta.solana.com"))
     ap.add_argument("--send-rpc", default=env("SEND_RPC_URL", ""),
                     help="RPC used for sendTransaction (default: same as --rpc)")
@@ -93,6 +95,15 @@ async def main():
                              live=True, max_spend_sol=a.max_spend_sol)
             for pk, bal, sig in await exp.sweep(main_kp):
                 print(f"swept {bal/1e9:.6f} SOL from {pk}: {sig}")
+            return
+
+        if a.cmd == "combine":
+            if not a.run_dir:
+                sys.exit("usage: combine RUN_DIR [RUN_DIR ...] --out DIR")
+            os.makedirs(a.out, exist_ok=True)
+            an.analyze(a.run_dir, extra_runs=a.more_runs, out_dir=os.path.join(a.out, "analysis"))
+            report.write(a.run_dir, extra_runs=a.more_runs, out_dir=a.out)
+            print(f"combined report: {os.path.join(a.out, 'REPORT.md')}")
             return
 
         if a.cmd in ("collect", "analyze"):
