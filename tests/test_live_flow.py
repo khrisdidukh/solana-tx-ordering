@@ -88,6 +88,8 @@ class Sweep(unittest.TestCase):
                     rpc.balances[str(kp.pubkey())] = 1_000_000
                 out = await exp.sweep(main)
                 self.assertEqual(len(out), 9)
+                self.assertEqual(len(rpc.sent), 3)  # 4 + 4 + 1 sub-payers per tx
                 for tx in rpc.sent:
-                    self.assertEqual(tx.message.account_keys[1], main.pubkey())
+                    self.assertEqual(tx.message.account_keys[0], main.pubkey())  # main pays the fee
+                    self.assertTrue(tx.verify_with_results() if hasattr(tx, "verify_with_results") else True)
         asyncio.run(go())

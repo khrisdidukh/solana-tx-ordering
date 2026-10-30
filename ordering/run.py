@@ -207,19 +207,31 @@ class Experiment:
             await asyncio.sleep(1)
         raise SystemExit(f"tx {sig} not confirmed in {timeout}s")
 
-    async def sweep(self, main: Keypair):
-        """Send everything left on the sub-payers back to the main wallet."""
+    async def sweep(self, main: Keypair, per_tx=4):
+        """Send everything left on the sub-payers back to the main wallet.
+
+        The main wallet pays the fees and each sub-payer transfers its whole
+        balance, which closes it.  (A sub-payer cannot pay its own sweep fee
+        when its balance is exactly the rent-exempt minimum: a fee payer must
+        stay rent-exempt after the fee is taken.)"""
         self.load_payers()
         bh = await self.fresh_blockhash()
         out = []
+        funded = []
         for kp in self.payers + [self.conf_payer]:
-            bal = (await self.rpc.call("getBalance", [str(kp.pubkey())]))["value"]
-            if bal > txs.BASE_FEE_PER_SIG:
-                tx = txs.transfer_tx(kp, [(kp.pubkey(), main.pubkey(), bal - txs.BASE_FEE_PER_SIG)], bh)
-                self.ledger.add(txs.BASE_FEE_PER_SIG, "sweep tx fee")
-                sig = await self.rpc.call("sendTransaction", [txs.b64(tx), {"encoding": "base64"}])
+            bal = (await self.rpc.call("getBalance", [str(kp.pubkey()), {"commitment": "confirmed"}]))["value"]
+            if bal > 0:
+                funded.append((kp, bal))
+        for i in range(0, len(funded), per_tx):
+            chunk = funded[i:i + per_tx]
+            tx = txs.transfer_tx(main, [(kp.pubkey(), main.pubkey(), bal) for kp, bal in chunk], bh,
+                                 extra_signers=[kp for kp, _ in chunk])
+            fee = txs.BASE_FEE_PER_SIG * (1 + len(chunk))
+            self.ledger.add(fee, "sweep tx fee")
+            sig = await self.rpc.call("sendTransaction", [txs.b64(tx), {"encoding": "base64"}])
+            for kp, bal in chunk:
                 out.append((str(kp.pubkey()), bal, sig))
-        for _, _, sig in out:
+        for sig in dict.fromkeys(s for _, _, s in out):
             try:
                 await self.confirm(sig)
             except SystemExit as e:
