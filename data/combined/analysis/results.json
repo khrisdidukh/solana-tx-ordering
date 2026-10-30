@@ -1,0 +1,1002 @@
+{
+ "per_validator": {
+  "5Cchr1XGEg7dbBXByV5NY2ad8jfxAM7HA3x8D56rq9Ux": {
+   "client": "AgaveBam",
+   "batches": 12,
+   "probes_sent": 144,
+   "landed_target_window": 126,
+   "landed_other_leader": 15,
+   "not_landed": 3,
+   "independent": {
+    "tau_fee": 0.4044642857142857,
+    "p_fee": 0.002749312671832042,
+    "tau_send": 0.04464285714285715,
+    "p_send": 0.7535616095976005,
+    "n_blocks": 16
+   },
+   "conflicting": {
+    "tau_fee": 0.611111111111111,
+    "p_fee": 0.00424893776555861,
+    "tau_send": 0.4444444444444444,
+    "p_send": 0.05298675331167208,
+    "n_blocks": 12
+   },
+   "all_in_block": {
+    "tau_fee": 0.17196673508787647,
+    "p_fee": 0.18970257435641089,
+    "tau_send": 0.2568398268398268,
+    "p_send": 0.047238190452386905,
+    "n_blocks": 20
+   },
+   "across_window": {
+    "tau_fee": 0.13156150540917147,
+    "p_fee": 0.06098475381154711,
+    "tau_send": 0.21046831955922868,
+    "p_send": 0.0024993751562109472,
+    "n_blocks": 11
+   },
+   "verdict_independent": "priority-fee order (partial, tau=0.40)",
+   "verdict_conflicting": "priority-fee order (strong, tau=0.61)"
+  },
+  "5Us18hLZPXJTS4QVuGSsUw137Dyd2tgBaem24Xsf5nBS": {
+   "client": "Agave",
+   "batches": 12,
+   "probes_sent": 144,
+   "landed_target_window": 139,
+   "landed_other_leader": 5,
+   "not_landed": 0,
+   "independent": {
+    "tau_fee": 0.02380952380952381,
+    "p_fee": 0.8657835541114721,
+    "tau_send": 0.375,
+    "p_send": 0.004498875281179705,
+    "n_blocks": 20
+   },
+   "conflicting": {
+    "tau_fee": 0.40476190476190477,
+    "p_fee": 0.06073481629592602,
+    "tau_send": 0.33333333333333337,
+    "p_send": 0.1232191952011997,
+    "n_blocks": 14
+   },
+   "all_in_block": {
+    "tau_fee": 0.20300012709032886,
+    "p_fee": 0.06823294176455887,
+    "tau_send": 0.45260681347637866,
+    "p_send": 0.00024993751562109475,
+    "n_blocks": 23
+   },
+   "across_window": {
+    "tau_fee": 0.04649294160695331,
+    "p_fee": 0.4973756560859785,
+    "tau_send": 0.2224025974025974,
+    "p_send": 0.0007498125468632841,
+    "n_blocks": 12
+   },
+   "verdict_independent": "arrival order (partial, tau=0.38)",
+   "verdict_conflicting": "no rule detected - consistent with noise"
+  },
+  "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE": {
+   "client": "Agave",
+   "batches": 12,
+   "probes_sent": 144,
+   "landed_target_window": 117,
+   "landed_other_leader": 27,
+   "not_landed": 0,
+   "independent": {
+    "tau_fee": -0.14175824175824175,
+    "p_fee": 0.3911522119470133,
+    "tau_send": 0.23956043956043957,
+    "p_send": 0.1334666333416646,
+    "n_blocks": 13
+   },
+   "conflicting": {
+    "tau_fee": 0.1212121212121212,
+    "p_fee": 0.6105973506623344,
+    "tau_send": 0.36363636363636365,
+    "p_send": 0.10047488127968009,
+    "n_blocks": 11
+   },
+   "all_in_block": {
+    "tau_fee": -0.022581529703409826,
+    "p_fee": 0.88127968007998,
+    "tau_send": 0.3338720538720539,
+    "p_send": 0.00899775056235941,
+    "n_blocks": 15
+   },
+   "across_window": {
+    "tau_fee": 0.06301851046918969,
+    "p_fee": 0.48412896775806047,
+    "tau_send": 0.4486685032139578,
+    "p_send": 0.00024993751562109475,
+    "n_blocks": 11
+   },
+   "verdict_independent": "no rule detected - consistent with noise",
+   "verdict_conflicting": "no rule detected - consistent with noise"
+  },
+  "9eGrDohdNTAo61DRHyfMuqKWXqYnA3i254Wiszxe8FoY": {
+   "client": "Firedancer",
+   "batches": 12,
+   "probes_sent": 144,
+   "landed_target_window": 134,
+   "landed_other_leader": 10,
+   "not_landed": 0,
+   "independent": {
+    "tau_fee": 0.5166666666666667,
+    "p_fee": 0.00024993751562109475,
+    "tau_send": -0.0017006802721088443,
+    "p_send": 0.9925018745313672,
+    "n_blocks": 14
+   },
+   "conflicting": {
+    "tau_fee": 0.6944444444444445,
+    "p_fee": 0.00024993751562109475,
+    "tau_send": -4.625929269271485e-18,
+    "p_send": 1.0,
+    "n_blocks": 12
+   },
+   "all_in_block": {
+    "tau_fee": 0.3633655081482612,
+    "p_fee": 0.0017495626093476631,
+    "tau_send": 0.17646209999151174,
+    "p_send": 0.1517120719820045,
+    "n_blocks": 17
+   },
+   "across_window": {
+    "tau_fee": 0.2727465625510512,
+    "p_fee": 0.00024993751562109475,
+    "tau_send": 0.14612794612794613,
+    "p_send": 0.03749062734316421,
+    "n_blocks": 12
+   },
+   "verdict_independent": "priority-fee order (partial, tau=0.52)",
+   "verdict_conflicting": "priority-fee order (strong, tau=0.69)"
+  },
+  "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP": {
+   "client": "FireBAM",
+   "batches": 12,
+   "probes_sent": 144,
+   "landed_target_window": 95,
+   "landed_other_leader": 49,
+   "not_landed": 0,
+   "independent": {
+    "tau_fee": 0.3632034632034632,
+    "p_fee": 0.02549362659335166,
+    "tau_send": 0.17272727272727273,
+    "p_send": 0.3279180204948763,
+    "n_blocks": 11
+   },
+   "conflicting": {
+    "tau_fee": 0.6296296296296297,
+    "p_fee": 0.0032491877030742314,
+    "tau_send": 0.3333333333333333,
+    "p_send": 0.15396150962259436,
+    "n_blocks": 9
+   },
+   "all_in_block": {
+    "tau_fee": 0.47997337035008397,
+    "p_fee": 0.0004998750312421895,
+    "tau_send": 0.25352332852332854,
+    "p_send": 0.0427393151712072,
+    "n_blocks": 12
+   },
+   "across_window": {
+    "tau_fee": 0.3683019201901955,
+    "p_fee": 0.00024993751562109475,
+    "tau_send": 0.37104377104377106,
+    "p_send": 0.00024993751562109475,
+    "n_blocks": 9
+   },
+   "verdict_independent": "weak evidence only (fee tau=0.36, p=0.025)",
+   "verdict_conflicting": "priority-fee order (strong, tau=0.63)"
+  },
+  "A4hyMd3FyvUJSRafDUSwtLLaQcxRP4r1BRC9w2AJ1to2": {
+   "client": "FireBAM",
+   "batches": 8,
+   "probes_sent": 96,
+   "landed_target_window": 65,
+   "landed_other_leader": 31,
+   "not_landed": 0,
+   "independent": {
+    "tau_fee": 0.3058201058201058,
+    "p_fee": 0.15396150962259436,
+    "tau_send": 0.13703703703703704,
+    "p_send": 0.5393651587103224,
+    "n_blocks": 9
+   },
+   "conflicting": {
+    "tau_fee": 0.9444444444444445,
+    "p_fee": 0.0004998750312421895,
+    "tau_send": 0.055555555555555546,
+    "p_send": 0.9305173706573356,
+    "n_blocks": 6
+   },
+   "all_in_block": {
+    "tau_fee": 0.3989710479307983,
+    "p_fee": 0.011997000749812546,
+    "tau_send": 0.1514510181176848,
+    "p_send": 0.43314171457135714,
+    "n_blocks": 9
+   },
+   "across_window": {
+    "tau_fee": 0.3912103585980273,
+    "p_fee": 0.0004998750312421895,
+    "tau_send": 0.28499278499278496,
+    "p_send": 0.0069982504373906525,
+    "n_blocks": 6
+   },
+   "verdict_independent": "no rule detected - consistent with noise",
+   "verdict_conflicting": "priority-fee order (strict, tau=0.94)"
+  },
+  "Awes4Tr6TX8JDzEhCZY2QVNimT6iD1zWHzf1vNyGvpLM": {
+   "client": "HarmonicFiredancer",
+   "batches": 12,
+   "probes_sent": 144,
+   "landed_target_window": 129,
+   "landed_other_leader": 11,
+   "not_landed": 4,
+   "independent": {
+    "tau_fee": 0.32976190476190476,
+    "p_fee": 0.0094976255936016,
+    "tau_send": 0.048511904761904756,
+    "p_send": 0.7278180454886278,
+    "n_blocks": 16
+   },
+   "conflicting": {
+    "tau_fee": 0.2727272727272727,
+    "p_fee": 0.1944513871532117,
+    "tau_send": 0.2727272727272727,
+    "p_send": 0.1942014496375906,
+    "n_blocks": 11
+   },
+   "all_in_block": {
+    "tau_fee": 0.18460627327765755,
+    "p_fee": 0.14421394651337166,
+    "tau_send": 0.212588065529242,
+    "p_send": 0.08097975506123468,
+    "n_blocks": 17
+   },
+   "across_window": {
+    "tau_fee": 0.2154581349634028,
+    "p_fee": 0.00899775056235941,
+    "tau_send": 0.2159090909090909,
+    "p_send": 0.00899775056235941,
+    "n_blocks": 12
+   },
+   "verdict_independent": "priority-fee order (partial, tau=0.33)",
+   "verdict_conflicting": "no rule detected - consistent with noise"
+  },
+  "CAo1dCGYrB6NhHh5xb1cGjUiu86iyCfMTENxgHumSve4": {
+   "client": "HarmonicAgave",
+   "batches": 12,
+   "probes_sent": 144,
+   "landed_target_window": 122,
+   "landed_other_leader": 22,
+   "not_landed": 0,
+   "independent": {
+    "tau_fee": 0.14578754578754577,
+    "p_fee": 0.2936765808547863,
+    "tau_send": 0.25054945054945055,
+    "p_send": 0.0614846288427893,
+    "n_blocks": 13
+   },
+   "conflicting": {
+    "tau_fee": 0.4,
+    "p_fee": 0.0614846288427893,
+    "tau_send": 0.2333333333333333,
+    "p_send": 0.2999250187453137,
+    "n_blocks": 10
+   },
+   "all_in_block": {
+    "tau_fee": 0.21577006056290643,
+    "p_fee": 0.09272681829542614,
+    "tau_send": 0.39003367003367007,
+    "p_send": 0.0012496875781054736,
+    "n_blocks": 14
+   },
+   "across_window": {
+    "tau_fee": 0.09066928292470475,
+    "p_fee": 0.21594601349662584,
+    "tau_send": 0.21818181818181817,
+    "p_send": 0.0007498125468632841,
+    "n_blocks": 10
+   },
+   "verdict_independent": "no rule detected - consistent with noise",
+   "verdict_conflicting": "no rule detected - consistent with noise"
+  },
+  "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy": {
+   "client": "AgaveBam",
+   "batches": 12,
+   "probes_sent": 144,
+   "landed_target_window": 140,
+   "landed_other_leader": 4,
+   "not_landed": 0,
+   "independent": {
+    "tau_fee": 0.3292063492063492,
+    "p_fee": 0.011497125718570358,
+    "tau_send": 0.27428571428571424,
+    "p_send": 0.04123969007748063,
+    "n_blocks": 15
+   },
+   "conflicting": {
+    "tau_fee": 0.2619047619047619,
+    "p_fee": 0.1939515121219695,
+    "tau_send": 0.2619047619047619,
+    "p_send": 0.19270182454386403,
+    "n_blocks": 14
+   },
+   "all_in_block": {
+    "tau_fee": 0.36450533792631584,
+    "p_fee": 0.002749312671832042,
+    "tau_send": 0.27729677729677726,
+    "p_send": 0.022494376405898527,
+    "n_blocks": 18
+   },
+   "across_window": {
+    "tau_fee": 0.2548998462865148,
+    "p_fee": 0.0007498125468632841,
+    "tau_send": 0.3542087542087542,
+    "p_send": 0.00024993751562109475,
+    "n_blocks": 12
+   },
+   "verdict_independent": "weak evidence only (fee tau=0.33, p=0.011; arrival tau=0.27, p=0.041)",
+   "verdict_conflicting": "no rule detected - consistent with noise"
+  },
+  "E1r4Psq84tHfQ6aPTvvDka4U3u8zPVD7gEUrH25RdxHL": {
+   "client": "JitoLabs",
+   "batches": 12,
+   "probes_sent": 144,
+   "landed_target_window": 128,
+   "landed_other_leader": 13,
+   "not_landed": 3,
+   "independent": {
+    "tau_fee": -0.14999999999999997,
+    "p_fee": 0.2889277680579855,
+    "tau_send": 0.2727891156462585,
+    "p_send": 0.054236440889777554,
+    "n_blocks": 14
+   },
+   "conflicting": {
+    "tau_fee": -0.1282051282051282,
+    "p_fee": 0.5901024743814046,
+    "tau_send": 0.38461538461538464,
+    "p_send": 0.07298175456135966,
+    "n_blocks": 13
+   },
+   "all_in_block": {
+    "tau_fee": -0.20539305358243787,
+    "p_fee": 0.053486628342914275,
+    "tau_send": 0.43975893387658094,
+    "p_send": 0.00024993751562109475,
+    "n_blocks": 16
+   },
+   "across_window": {
+    "tau_fee": -0.19257093796133742,
+    "p_fee": 0.009747563109222694,
+    "tau_send": 0.29419191919191917,
+    "p_send": 0.00024993751562109475,
+    "n_blocks": 12
+   },
+   "verdict_independent": "no rule detected - consistent with noise",
+   "verdict_conflicting": "no rule detected - consistent with noise"
+  },
+  "E3mDbFMr8yZcCAZx5wPUFCRmLX31u8Nnj4jPoPc54h3F": {
+   "client": "Rakurai",
+   "batches": 8,
+   "probes_sent": 96,
+   "landed_target_window": 85,
+   "landed_other_leader": 11,
+   "not_landed": 0,
+   "independent": {
+    "tau_fee": -0.03809523809523809,
+    "p_fee": 0.8482879280179955,
+    "tau_send": 0.06904761904761905,
+    "p_send": 0.7345663584103974,
+    "n_blocks": 10
+   },
+   "conflicting": {
+    "tau_fee": 0.20833333333333331,
+    "p_fee": 0.4536365908522869,
+    "tau_send": 0.20833333333333331,
+    "p_send": 0.4528867783054236,
+    "n_blocks": 8
+   },
+   "all_in_block": {
+    "tau_fee": -0.0316300989615044,
+    "p_fee": 0.844288927768058,
+    "tau_send": 0.23750491932310114,
+    "p_send": 0.10247438140464883,
+    "n_blocks": 11
+   },
+   "across_window": {
+    "tau_fee": -0.07146347422636827,
+    "p_fee": 0.4233941514621345,
+    "tau_send": 0.17316017316017315,
+    "p_send": 0.04123969007748063,
+    "n_blocks": 7
+   },
+   "verdict_independent": "no rule detected - consistent with noise",
+   "verdict_conflicting": "no rule detected - consistent with noise"
+  },
+  "EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4": {
+   "client": "Firedancer",
+   "batches": 8,
+   "probes_sent": 96,
+   "landed_target_window": 89,
+   "landed_other_leader": 4,
+   "not_landed": 3,
+   "independent": {
+    "tau_fee": 0.09610389610389611,
+    "p_fee": 0.6035991002249438,
+    "tau_send": 0.04848484848484849,
+    "p_send": 0.8050487378155461,
+    "n_blocks": 11
+   },
+   "conflicting": {
+    "tau_fee": 0.48148148148148145,
+    "p_fee": 0.06523369157710572,
+    "tau_send": 0.14814814814814814,
+    "p_send": 0.6193451637090728,
+    "n_blocks": 9
+   },
+   "all_in_block": {
+    "tau_fee": 0.029058422621627153,
+    "p_fee": 0.8410397400649837,
+    "tau_send": 0.1884199134199134,
+    "p_send": 0.16445888527868033,
+    "n_blocks": 12
+   },
+   "across_window": {
+    "tau_fee": 0.19630511017596647,
+    "p_fee": 0.019745063734066485,
+    "tau_send": 0.19570707070707072,
+    "p_send": 0.01849537615596101,
+    "n_blocks": 8
+   },
+   "verdict_independent": "no rule detected - consistent with noise",
+   "verdict_conflicting": "no rule detected - consistent with noise"
+  },
+  "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk": {
+   "client": "HarmonicAgave",
+   "batches": 12,
+   "probes_sent": 144,
+   "landed_target_window": 133,
+   "landed_other_leader": 8,
+   "not_landed": 3,
+   "independent": {
+    "tau_fee": 0.4434920634920635,
+    "p_fee": 0.0004998750312421895,
+    "tau_send": 0.20539682539682538,
+    "p_send": 0.12971757060734818,
+    "n_blocks": 15
+   },
+   "conflicting": {
+    "tau_fee": 0.5476190476190477,
+    "p_fee": 0.008247938015496127,
+    "tau_send": 0.07142857142857142,
+    "p_send": 0.7888027993001749,
+    "n_blocks": 14
+   },
+   "all_in_block": {
+    "tau_fee": 0.4788234291209412,
+    "p_fee": 0.00024993751562109475,
+    "tau_send": 0.1976608187134503,
+    "p_send": 0.10447388152961759,
+    "n_blocks": 19
+   },
+   "across_window": {
+    "tau_fee": 0.28220361866410404,
+    "p_fee": 0.00024993751562109475,
+    "tau_send": 0.23787878787878788,
+    "p_send": 0.0004998750312421895,
+    "n_blocks": 12
+   },
+   "verdict_independent": "priority-fee order (partial, tau=0.44)",
+   "verdict_conflicting": "priority-fee order (partial, tau=0.55)"
+  },
+  "HEL1USMZKAL2odpNBj2oCjffnFGaYwmbGmyewGv1e2TU": {
+   "client": "JitoLabs",
+   "batches": 12,
+   "probes_sent": 144,
+   "landed_target_window": 116,
+   "landed_other_leader": 27,
+   "not_landed": 1,
+   "independent": {
+    "tau_fee": 0.013553113553113548,
+    "p_fee": 0.9252686828292926,
+    "tau_send": 0.2549450549450549,
+    "p_send": 0.07548112971757061,
+    "n_blocks": 13
+   },
+   "conflicting": {
+    "tau_fee": 0.4,
+    "p_fee": 0.05873531617095726,
+    "tau_send": 0.4666666666666667,
+    "p_send": 0.021494626343414147,
+    "n_blocks": 10
+   },
+   "all_in_block": {
+    "tau_fee": 0.07494389745076334,
+    "p_fee": 0.5598600349912521,
+    "tau_send": 0.27161410018552873,
+    "p_send": 0.021494626343414147,
+    "n_blocks": 14
+   },
+   "across_window": {
+    "tau_fee": -0.04130848625602643,
+    "p_fee": 0.596100974756311,
+    "tau_send": 0.367755476846386,
+    "p_send": 0.00024993751562109475,
+    "n_blocks": 11
+   },
+   "verdict_independent": "no rule detected - consistent with noise",
+   "verdict_conflicting": "weak evidence only (arrival tau=0.47, p=0.021)"
+  },
+  "JD549HsbJHeEKKUrKgg4Fj2iyv2RGjsV7NTZjZUrHybB": {
+   "client": "Firedancer",
+   "batches": 4,
+   "probes_sent": 48,
+   "landed_target_window": 48,
+   "landed_other_leader": 0,
+   "not_landed": 0,
+   "independent": {
+    "tau_fee": -0.009523809523809526,
+    "p_fee": 0.9607598100474881,
+    "tau_send": 0.4904761904761905,
+    "p_send": 0.008747813046738315,
+    "n_blocks": 6
+   },
+   "conflicting": {
+    "tau_fee": 0.0,
+    "p_fee": 1.0,
+    "tau_send": 0.06666666666666667,
+    "p_send": 0.9212696825793552,
+    "n_blocks": 5
+   },
+   "all_in_block": {
+    "tau_fee": -0.14829753335866627,
+    "p_fee": 0.5003749062734316,
+    "tau_send": 0.4507730364873222,
+    "p_send": 0.009747563109222694,
+    "n_blocks": 7
+   },
+   "across_window": {
+    "tau_fee": -0.09379580992210836,
+    "p_fee": 0.4408897775556111,
+    "tau_send": 0.4090909090909091,
+    "p_send": 0.00024993751562109475,
+    "n_blocks": 4
+   },
+   "verdict_independent": "arrival order (partial, tau=0.49)",
+   "verdict_conflicting": "no rule detected - consistent with noise"
+  },
+  "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b": {
+   "client": "HarmonicFiredancer",
+   "batches": 12,
+   "probes_sent": 144,
+   "landed_target_window": 134,
+   "landed_other_leader": 7,
+   "not_landed": 3,
+   "independent": {
+    "tau_fee": 0.035416666666666666,
+    "p_fee": 0.8197950512371907,
+    "tau_send": 0.1913690476190476,
+    "p_send": 0.18295426143464133,
+    "n_blocks": 16
+   },
+   "conflicting": {
+    "tau_fee": 0.23529411764705882,
+    "p_fee": 0.29117720569857536,
+    "tau_send": 0.29411764705882354,
+    "p_send": 0.19595101224693826,
+    "n_blocks": 17
+   },
+   "all_in_block": {
+    "tau_fee": 0.06354874831639556,
+    "p_fee": 0.5371157210697326,
+    "tau_send": 0.09644861311527977,
+    "p_send": 0.34466383404148965,
+    "n_blocks": 18
+   },
+   "across_window": {
+    "tau_fee": 0.07611439242600128,
+    "p_fee": 0.29742564358910273,
+    "tau_send": 0.15841750841750843,
+    "p_send": 0.023744063984004,
+    "n_blocks": 12
+   },
+   "verdict_independent": "no rule detected - consistent with noise",
+   "verdict_conflicting": "no rule detected - consistent with noise"
+  },
+  "ana2y2YvQ3ZPMwm6qhnN3nJoUSiT3qx5Pvetkq9xcfY": {
+   "client": "Rakurai",
+   "batches": 12,
+   "probes_sent": 144,
+   "landed_target_window": 137,
+   "landed_other_leader": 7,
+   "not_landed": 0,
+   "independent": {
+    "tau_fee": 0.2415873015873016,
+    "p_fee": 0.07698075481129718,
+    "tau_send": 0.4980952380952381,
+    "p_send": 0.00024993751562109475,
+    "n_blocks": 15
+   },
+   "conflicting": {
+    "tau_fee": -0.05555555555555556,
+    "p_fee": 0.8015496125968508,
+    "tau_send": 0.5833333333333334,
+    "p_send": 0.00024993751562109475,
+    "n_blocks": 12
+   },
+   "all_in_block": {
+    "tau_fee": 0.11454567370705922,
+    "p_fee": 0.3976505873531617,
+    "tau_send": 0.5416786916786918,
+    "p_send": 0.00024993751562109475,
+    "n_blocks": 18
+   },
+   "across_window": {
+    "tau_fee": -0.008967796843569659,
+    "p_fee": 0.8935266183454137,
+    "tau_send": 0.37533670033670036,
+    "p_send": 0.00024993751562109475,
+    "n_blocks": 12
+   },
+   "verdict_independent": "arrival order (partial, tau=0.50)",
+   "verdict_conflicting": "arrival order (partial, tau=0.58)"
+  }
+ },
+ "per_client": {
+  "Agave": {
+   "validators": 2,
+   "independent": {
+    "tau_fee": -0.04141414141414141,
+    "p_fee": 0.6933266683329168,
+    "tau_send": 0.3216450216450216,
+    "p_send": 0.001999500124968758,
+    "n_blocks": 33
+   },
+   "conflicting": {
+    "tau_fee": 0.28,
+    "p_fee": 0.07423144213946513,
+    "tau_send": 0.3466666666666666,
+    "p_send": 0.02499375156210947,
+    "n_blocks": 25
+   },
+   "across_window": {
+    "tau_fee": 0.05439647454106636,
+    "p_fee": 0.3309172706823294,
+    "tau_send": 0.3306167262689002,
+    "p_send": 0.00024993751562109475,
+    "n_blocks": 23
+   },
+   "verdict_across_window": "arrival order (partial, tau=0.33)",
+   "verdict_independent": "arrival order (partial, tau=0.32)",
+   "verdict_conflicting": "weak evidence only (arrival tau=0.35, p=0.025)"
+  },
+  "AgaveBam": {
+   "validators": 2,
+   "independent": {
+    "tau_fee": 0.36804915514592934,
+    "p_fee": 0.00024993751562109475,
+    "tau_send": 0.15576036866359447,
+    "p_send": 0.12471882029492627,
+    "n_blocks": 31
+   },
+   "conflicting": {
+    "tau_fee": 0.4230769230769231,
+    "p_fee": 0.003749062734316421,
+    "tau_send": 0.34615384615384615,
+    "p_send": 0.019995001249687578,
+    "n_blocks": 26
+   },
+   "across_window": {
+    "tau_fee": 0.19591194412778537,
+    "p_fee": 0.00024993751562109475,
+    "tau_send": 0.2854633289415898,
+    "p_send": 0.00024993751562109475,
+    "n_blocks": 23
+   },
+   "verdict_across_window": "mixed: fee (tau=0.20) and arrival (tau=0.29) both matter",
+   "verdict_independent": "priority-fee order (partial, tau=0.37)",
+   "verdict_conflicting": "priority-fee order (partial, tau=0.42)"
+  },
+  "FireBAM": {
+   "validators": 2,
+   "independent": {
+    "tau_fee": 0.3373809523809524,
+    "p_fee": 0.008747813046738315,
+    "tau_send": 0.15666666666666668,
+    "p_send": 0.2279430142464384,
+    "n_blocks": 20
+   },
+   "conflicting": {
+    "tau_fee": 0.7555555555555556,
+    "p_fee": 0.00024993751562109475,
+    "tau_send": 0.2222222222222222,
+    "p_send": 0.23894026493376655,
+    "n_blocks": 15
+   },
+   "across_window": {
+    "tau_fee": 0.3774652955533282,
+    "p_fee": 0.00024993751562109475,
+    "tau_send": 0.3366233766233766,
+    "p_send": 0.00024993751562109475,
+    "n_blocks": 15
+   },
+   "verdict_across_window": "mixed: fee (tau=0.38) and arrival (tau=0.34) both matter",
+   "verdict_independent": "priority-fee order (partial, tau=0.34)",
+   "verdict_conflicting": "priority-fee order (strong, tau=0.76)"
+  },
+  "Firedancer": {
+   "validators": 3,
+   "independent": {
+    "tau_fee": 0.26559139784946234,
+    "p_fee": 0.000999750062484379,
+    "tau_send": 0.11136712749615976,
+    "p_send": 0.22969257685578606,
+    "n_blocks": 31
+   },
+   "conflicting": {
+    "tau_fee": 0.48717948717948717,
+    "p_fee": 0.00024993751562109475,
+    "tau_send": 0.0641025641025641,
+    "p_send": 0.6693326668332916,
+    "n_blocks": 26
+   },
+   "across_window": {
+    "tau_fee": 0.1861756830138297,
+    "p_fee": 0.00024993751562109475,
+    "tau_send": 0.2064814814814815,
+    "p_send": 0.00024993751562109475,
+    "n_blocks": 24
+   },
+   "verdict_across_window": "mixed: fee (tau=0.19) and arrival (tau=0.21) both matter",
+   "verdict_independent": "priority-fee order (partial, tau=0.27)",
+   "verdict_conflicting": "priority-fee order (partial, tau=0.49)"
+  },
+  "HarmonicAgave": {
+   "validators": 2,
+   "independent": {
+    "tau_fee": 0.3052721088435374,
+    "p_fee": 0.0004998750312421895,
+    "tau_send": 0.22636054421768706,
+    "p_send": 0.015246188452886777,
+    "n_blocks": 28
+   },
+   "conflicting": {
+    "tau_fee": 0.4861111111111111,
+    "p_fee": 0.001999500124968758,
+    "tau_send": 0.13888888888888887,
+    "p_send": 0.3989002749312672,
+    "n_blocks": 24
+   },
+   "across_window": {
+    "tau_fee": 0.19514255696437707,
+    "p_fee": 0.0004998750312421895,
+    "tau_send": 0.22892561983471074,
+    "p_send": 0.00024993751562109475,
+    "n_blocks": 22
+   },
+   "verdict_across_window": "mixed: fee (tau=0.20) and arrival (tau=0.23) both matter",
+   "verdict_independent": "priority-fee order (partial, tau=0.31)",
+   "verdict_conflicting": "priority-fee order (partial, tau=0.49)"
+  },
+  "HarmonicFiredancer": {
+   "validators": 2,
+   "independent": {
+    "tau_fee": 0.1825892857142857,
+    "p_fee": 0.054236440889777554,
+    "tau_send": 0.11994047619047618,
+    "p_send": 0.22419395151212196,
+    "n_blocks": 32
+   },
+   "conflicting": {
+    "tau_fee": 0.25,
+    "p_fee": 0.10722319420144964,
+    "tau_send": 0.2857142857142857,
+    "p_send": 0.06723319170207448,
+    "n_blocks": 28
+   },
+   "across_window": {
+    "tau_fee": 0.14578626369470202,
+    "p_fee": 0.007998000499875032,
+    "tau_send": 0.18716329966329967,
+    "p_send": 0.0012496875781054736,
+    "n_blocks": 24
+   },
+   "verdict_across_window": "mixed: fee (tau=0.15) and arrival (tau=0.19) both matter",
+   "verdict_independent": "no rule detected - consistent with noise",
+   "verdict_conflicting": "no rule detected - consistent with noise"
+  },
+  "JitoLabs": {
+   "validators": 2,
+   "independent": {
+    "tau_fee": -0.07125220458553791,
+    "p_fee": 0.5086228442889278,
+    "tau_send": 0.26419753086419756,
+    "p_send": 0.007248187953011747,
+    "n_blocks": 27
+   },
+   "conflicting": {
+    "tau_fee": 0.10144927536231885,
+    "p_fee": 0.5401149712571857,
+    "tau_send": 0.42028985507246375,
+    "p_send": 0.0049987503124218945,
+    "n_blocks": 23
+   },
+   "across_window": {
+    "tau_fee": -0.12022802627618868,
+    "p_fee": 0.01949512621844539,
+    "tau_send": 0.32937449024405546,
+    "p_send": 0.00024993751562109475,
+    "n_blocks": 23
+   },
+   "verdict_across_window": "arrival order (partial, tau=0.33)",
+   "verdict_independent": "arrival order (partial, tau=0.26)",
+   "verdict_conflicting": "arrival order (partial, tau=0.42)"
+  },
+  "Rakurai": {
+   "validators": 2,
+   "independent": {
+    "tau_fee": 0.12971428571428573,
+    "p_fee": 0.23494126468382903,
+    "tau_send": 0.3264761904761905,
+    "p_send": 0.0022494376405898524,
+    "n_blocks": 25
+   },
+   "conflicting": {
+    "tau_fee": 0.049999999999999996,
+    "p_fee": 0.7673081729567608,
+    "tau_send": 0.4333333333333333,
+    "p_send": 0.0012496875781054736,
+    "n_blocks": 20
+   },
+   "across_window": {
+    "tau_fee": -0.031992520089863884,
+    "p_fee": 0.5373656585853537,
+    "tau_send": 0.3008506113769272,
+    "p_send": 0.00024993751562109475,
+    "n_blocks": 19
+   },
+   "verdict_across_window": "arrival order (partial, tau=0.30)",
+   "verdict_independent": "arrival order (partial, tau=0.33)",
+   "verdict_conflicting": "arrival order (partial, tau=0.43)"
+  }
+ },
+ "slot_in_window_by_run": {
+  "run-20261030T145010Z": {
+   "after_window": 95,
+   "1": 44,
+   "2": 333,
+   "3": 187
+  },
+  "run-20261030T152829Z": {
+   "after_window": 156,
+   "0": 95,
+   "1": 720,
+   "2": 426,
+   "3": 132
+  }
+ },
+ "landing_by_fee_level": {
+  "CONF:10000": {
+   "target_window": 161,
+   "not_landed": 2,
+   "other_leader": 21
+  },
+  "CONF:200000": {
+   "target_window": 162,
+   "not_landed": 1,
+   "other_leader": 21
+  },
+  "CONF:1000000": {
+   "target_window": 164,
+   "other_leader": 19,
+   "not_landed": 1
+  },
+  "CONF:4000000": {
+   "target_window": 163,
+   "other_leader": 21
+  },
+  "IND:0": {
+   "target_window": 158,
+   "not_landed": 4,
+   "other_leader": 22
+  },
+  "IND:1000": {
+   "target_window": 164,
+   "not_landed": 1,
+   "other_leader": 19
+  },
+  "IND:10000": {
+   "target_window": 158,
+   "other_leader": 24,
+   "not_landed": 2
+  },
+  "IND:50000": {
+   "target_window": 165,
+   "other_leader": 18,
+   "not_landed": 1
+  },
+  "IND:200000": {
+   "target_window": 162,
+   "not_landed": 2,
+   "other_leader": 20
+  },
+  "IND:1000000": {
+   "target_window": 157,
+   "not_landed": 3,
+   "other_leader": 24
+  },
+  "IND:4000000": {
+   "target_window": 161,
+   "other_leader": 22,
+   "not_landed": 1
+  },
+  "IND:16000000": {
+   "target_window": 162,
+   "other_leader": 20,
+   "not_landed": 2
+  }
+ },
+ "passive_by_client": {
+  "Agave": {
+   "blocks": 96,
+   "median_rho": -0.04720608707274526,
+   "median_rho_no_tip": -0.05174509828586739,
+   "median_frac_desc_adjacent": 0.5235668789808917,
+   "median_tip_rel_pos": 0.4689265536723164
+  },
+  "AgaveBam": {
+   "blocks": 96,
+   "median_rho": -0.09278881298235928,
+   "median_rho_no_tip": -0.09867687720518024,
+   "median_frac_desc_adjacent": 0.555327868852459,
+   "median_tip_rel_pos": 0.5586034912718204
+  },
+  "FireBAM": {
+   "blocks": 80,
+   "median_rho": -0.06285400840606531,
+   "median_rho_no_tip": -0.0696444170985205,
+   "median_frac_desc_adjacent": 0.5720338983050848,
+   "median_tip_rel_pos": 0.5866050808314087
+  },
+  "Firedancer": {
+   "blocks": 96,
+   "median_rho": -0.1781217339251104,
+   "median_rho_no_tip": -0.19973297828443698,
+   "median_frac_desc_adjacent": 0.5605381165919282,
+   "median_tip_rel_pos": 0.46604527296937415
+  },
+  "HarmonicAgave": {
+   "blocks": 96,
+   "median_rho": -0.09658856839192177,
+   "median_rho_no_tip": -0.09290807607966234,
+   "median_frac_desc_adjacent": 0.5535353535353535,
+   "median_tip_rel_pos": 0.5456674473067916
+  },
+  "HarmonicFiredancer": {
+   "blocks": 96,
+   "median_rho": -0.09652115263683757,
+   "median_rho_no_tip": -0.09639593819210192,
+   "median_frac_desc_adjacent": 0.5730918499353169,
+   "median_tip_rel_pos": 0.5496828752642706
+  },
+  "JitoLabs": {
+   "blocks": 96,
+   "median_rho": -0.02062041167584281,
+   "median_rho_no_tip": -0.031414225914370014,
+   "median_frac_desc_adjacent": 0.5397260273972603,
+   "median_tip_rel_pos": 0.5890804597701149
+  },
+  "Rakurai": {
+   "blocks": 80,
+   "median_rho": -0.060413193436421944,
+   "median_rho_no_tip": -0.07182978712766556,
+   "median_frac_desc_adjacent": 0.5490654205607477,
+   "median_tip_rel_pos": 0.5607476635514018
+  }
+ }
+}

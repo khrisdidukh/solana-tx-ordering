@@ -1,0 +1,953 @@
+{
+ "per_validator": {
+  "5Cchr1XGEg7dbBXByV5NY2ad8jfxAM7HA3x8D56rq9Ux": {
+   "client": "AgaveBam",
+   "batches": 8,
+   "probes_sent": 96,
+   "landed_target_window": 80,
+   "landed_other_leader": 15,
+   "not_landed": 1,
+   "independent": {
+    "tau_fee": 0.3463203463203463,
+    "p_fee": 0.04648837790552362,
+    "tau_send": 0.058441558441558454,
+    "p_send": 0.7435641089727568,
+    "n_blocks": 11
+   },
+   "conflicting": {
+    "tau_fee": 0.6666666666666666,
+    "p_fee": 0.01374656335916021,
+    "tau_send": 0.4166666666666667,
+    "p_send": 0.14571357160709822,
+    "n_blocks": 8
+   },
+   "all_in_block": {
+    "tau_fee": 0.15215683147786754,
+    "p_fee": 0.34791302174456384,
+    "tau_send": 0.33956916099773243,
+    "p_send": 0.020994751312171957,
+    "n_blocks": 14
+   },
+   "across_window": {
+    "tau_fee": -0.008853341038805345,
+    "p_fee": 0.9170207448137966,
+    "tau_send": 0.10995670995670996,
+    "p_send": 0.2039490127468133,
+    "n_blocks": 7
+   },
+   "verdict_independent": "weak evidence only (fee tau=0.35, p=0.046)",
+   "verdict_conflicting": "weak evidence only (fee tau=0.67, p=0.014)"
+  },
+  "5Us18hLZPXJTS4QVuGSsUw137Dyd2tgBaem24Xsf5nBS": {
+   "client": "Agave",
+   "batches": 8,
+   "probes_sent": 96,
+   "landed_target_window": 95,
+   "landed_other_leader": 1,
+   "not_landed": 0,
+   "independent": {
+    "tau_fee": -0.06587301587301587,
+    "p_fee": 0.696575856035991,
+    "tau_send": 0.20833333333333334,
+    "p_send": 0.18620344913771558,
+    "n_blocks": 12
+   },
+   "conflicting": {
+    "tau_fee": 0.2222222222222222,
+    "p_fee": 0.40814796300924766,
+    "tau_send": 0.4074074074074074,
+    "p_send": 0.09522619345163709,
+    "n_blocks": 9
+   },
+   "all_in_block": {
+    "tau_fee": 0.08597454396466521,
+    "p_fee": 0.5603599100224944,
+    "tau_send": 0.3916083916083916,
+    "p_send": 0.0014996250937265683,
+    "n_blocks": 13
+   },
+   "across_window": {
+    "tau_fee": -0.026515257293678172,
+    "p_fee": 0.7473131717070732,
+    "tau_send": 0.20454545454545456,
+    "p_send": 0.009247688077980504,
+    "n_blocks": 8
+   },
+   "verdict_independent": "no rule detected - consistent with noise",
+   "verdict_conflicting": "no rule detected - consistent with noise"
+  },
+  "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE": {
+   "client": "Agave",
+   "batches": 8,
+   "probes_sent": 96,
+   "landed_target_window": 92,
+   "landed_other_leader": 4,
+   "not_landed": 0,
+   "independent": {
+    "tau_fee": -0.2532467532467532,
+    "p_fee": 0.17845538615346163,
+    "tau_send": 0.22597402597402597,
+    "p_send": 0.242689327668083,
+    "n_blocks": 11
+   },
+   "conflicting": {
+    "tau_fee": 0.2592592592592593,
+    "p_fee": 0.33891527118220444,
+    "tau_send": 0.2962962962962963,
+    "p_send": 0.2766808297925519,
+    "n_blocks": 9
+   },
+   "all_in_block": {
+    "tau_fee": -0.14765651198581417,
+    "p_fee": 0.34341414646338414,
+    "tau_send": 0.2715969215969216,
+    "p_send": 0.06123469132716821,
+    "n_blocks": 12
+   },
+   "across_window": {
+    "tau_fee": 0.0045279072432667725,
+    "p_fee": 0.9612596850787303,
+    "tau_send": 0.3744949494949495,
+    "p_send": 0.00024993751562109475,
+    "n_blocks": 8
+   },
+   "verdict_independent": "no rule detected - consistent with noise",
+   "verdict_conflicting": "no rule detected - consistent with noise"
+  },
+  "9eGrDohdNTAo61DRHyfMuqKWXqYnA3i254Wiszxe8FoY": {
+   "client": "Firedancer",
+   "batches": 8,
+   "probes_sent": 96,
+   "landed_target_window": 87,
+   "landed_other_leader": 9,
+   "not_landed": 0,
+   "independent": {
+    "tau_fee": 0.4227513227513227,
+    "p_fee": 0.005248687828042989,
+    "tau_send": 0.07142857142857142,
+    "p_send": 0.6915771057235691,
+    "n_blocks": 9
+   },
+   "conflicting": {
+    "tau_fee": 0.7083333333333334,
+    "p_fee": 0.0007498125468632841,
+    "tau_send": 0.08333333333333333,
+    "p_send": 0.7513121719570107,
+    "n_blocks": 8
+   },
+   "all_in_block": {
+    "tau_fee": 0.4180915184019776,
+    "p_fee": 0.0029992501874531365,
+    "tau_send": 0.21798504525777254,
+    "p_send": 0.1744563859035241,
+    "n_blocks": 11
+   },
+   "across_window": {
+    "tau_fee": 0.24275272558333952,
+    "p_fee": 0.008247938015496127,
+    "tau_send": 0.2176767676767677,
+    "p_send": 0.018245438640339916,
+    "n_blocks": 8
+   },
+   "verdict_independent": "priority-fee order (partial, tau=0.42)",
+   "verdict_conflicting": "priority-fee order (strong, tau=0.71)"
+  },
+  "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP": {
+   "client": "FireBAM",
+   "batches": 8,
+   "probes_sent": 96,
+   "landed_target_window": 72,
+   "landed_other_leader": 24,
+   "not_landed": 0,
+   "independent": {
+    "tau_fee": 0.4183673469387755,
+    "p_fee": 0.0017495626093476631,
+    "tau_send": 0.023809523809523815,
+    "p_send": 0.8717820544863784,
+    "n_blocks": 7
+   },
+   "conflicting": {
+    "tau_fee": 0.5555555555555556,
+    "p_fee": 0.020494876280929768,
+    "tau_send": 0.2222222222222222,
+    "p_send": 0.42314421394651336,
+    "n_blocks": 6
+   },
+   "all_in_block": {
+    "tau_fee": 0.5068560657156457,
+    "p_fee": 0.00024993751562109475,
+    "tau_send": 0.2677849927849928,
+    "p_send": 0.06198450387403149,
+    "n_blocks": 8
+   },
+   "across_window": {
+    "tau_fee": 0.34912884804340333,
+    "p_fee": 0.0004998750312421895,
+    "tau_send": 0.24242424242424243,
+    "p_send": 0.00849787553111722,
+    "n_blocks": 6
+   },
+   "verdict_independent": "priority-fee order (partial, tau=0.42)",
+   "verdict_conflicting": "weak evidence only (fee tau=0.56, p=0.020)"
+  },
+  "A4hyMd3FyvUJSRafDUSwtLLaQcxRP4r1BRC9w2AJ1to2": {
+   "client": "FireBAM",
+   "batches": 8,
+   "probes_sent": 96,
+   "landed_target_window": 65,
+   "landed_other_leader": 31,
+   "not_landed": 0,
+   "independent": {
+    "tau_fee": 0.3058201058201058,
+    "p_fee": 0.15396150962259436,
+    "tau_send": 0.13703703703703704,
+    "p_send": 0.5393651587103224,
+    "n_blocks": 9
+   },
+   "conflicting": {
+    "tau_fee": 0.9444444444444445,
+    "p_fee": 0.0004998750312421895,
+    "tau_send": 0.055555555555555546,
+    "p_send": 0.9305173706573356,
+    "n_blocks": 6
+   },
+   "all_in_block": {
+    "tau_fee": 0.3989710479307983,
+    "p_fee": 0.011997000749812546,
+    "tau_send": 0.1514510181176848,
+    "p_send": 0.43314171457135714,
+    "n_blocks": 9
+   },
+   "across_window": {
+    "tau_fee": 0.3912103585980273,
+    "p_fee": 0.0004998750312421895,
+    "tau_send": 0.28499278499278496,
+    "p_send": 0.0069982504373906525,
+    "n_blocks": 6
+   },
+   "verdict_independent": "no rule detected - consistent with noise",
+   "verdict_conflicting": "priority-fee order (strict, tau=0.94)"
+  },
+  "Awes4Tr6TX8JDzEhCZY2QVNimT6iD1zWHzf1vNyGvpLM": {
+   "client": "HarmonicFiredancer",
+   "batches": 8,
+   "probes_sent": 96,
+   "landed_target_window": 96,
+   "landed_other_leader": 0,
+   "not_landed": 0,
+   "independent": {
+    "tau_fee": 0.3502164502164502,
+    "p_fee": 0.006498375406148463,
+    "tau_send": 0.06277056277056275,
+    "p_send": 0.6223444138965258,
+    "n_blocks": 11
+   },
+   "conflicting": {
+    "tau_fee": 0.375,
+    "p_fee": 0.12996750812296926,
+    "tau_send": 0.4583333333333333,
+    "p_send": 0.05898525368657836,
+    "n_blocks": 8
+   },
+   "all_in_block": {
+    "tau_fee": 0.21485788271061942,
+    "p_fee": 0.06598350412396901,
+    "tau_send": 0.32154882154882153,
+    "p_send": 0.001999500124968758,
+    "n_blocks": 12
+   },
+   "across_window": {
+    "tau_fee": 0.2423058422987799,
+    "p_fee": 0.003749062734316421,
+    "tau_send": 0.26515151515151514,
+    "p_send": 0.000999750062484379,
+    "n_blocks": 8
+   },
+   "verdict_independent": "priority-fee order (partial, tau=0.35)",
+   "verdict_conflicting": "no rule detected - consistent with noise"
+  },
+  "CAo1dCGYrB6NhHh5xb1cGjUiu86iyCfMTENxgHumSve4": {
+   "client": "HarmonicAgave",
+   "batches": 8,
+   "probes_sent": 96,
+   "landed_target_window": 85,
+   "landed_other_leader": 11,
+   "not_landed": 0,
+   "independent": {
+    "tau_fee": 0.10857142857142857,
+    "p_fee": 0.5353661584603849,
+    "tau_send": 0.28285714285714286,
+    "p_send": 0.0902274431392152,
+    "n_blocks": 10
+   },
+   "conflicting": {
+    "tau_fee": 0.33333333333333337,
+    "p_fee": 0.2459385153711572,
+    "tau_send": 0.047619047619047616,
+    "p_send": 0.926018495376156,
+    "n_blocks": 7
+   },
+   "all_in_block": {
+    "tau_fee": 0.20494776609045615,
+    "p_fee": 0.21169707573106725,
+    "tau_send": 0.37592592592592594,
+    "p_send": 0.01699575106223444,
+    "n_blocks": 11
+   },
+   "across_window": {
+    "tau_fee": 0.02233233569574009,
+    "p_fee": 0.8200449887528118,
+    "tau_send": 0.12554112554112556,
+    "p_send": 0.13321669582604348,
+    "n_blocks": 7
+   },
+   "verdict_independent": "no rule detected - consistent with noise",
+   "verdict_conflicting": "no rule detected - consistent with noise"
+  },
+  "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy": {
+   "client": "AgaveBam",
+   "batches": 8,
+   "probes_sent": 96,
+   "landed_target_window": 93,
+   "landed_other_leader": 3,
+   "not_landed": 0,
+   "independent": {
+    "tau_fee": 0.20264550264550263,
+    "p_fee": 0.1937015746063484,
+    "tau_send": 0.3116402116402116,
+    "p_send": 0.021494626343414147,
+    "n_blocks": 9
+   },
+   "conflicting": {
+    "tau_fee": 0.1111111111111111,
+    "p_fee": 0.6905773556610847,
+    "tau_send": 0.18518518518518517,
+    "p_send": 0.480129967508123,
+    "n_blocks": 9
+   },
+   "all_in_block": {
+    "tau_fee": 0.274805918951468,
+    "p_fee": 0.09072731817045739,
+    "tau_send": 0.2657768157768158,
+    "p_send": 0.12221944513871533,
+    "n_blocks": 12
+   },
+   "across_window": {
+    "tau_fee": 0.20579132735284697,
+    "p_fee": 0.011497125718570358,
+    "tau_send": 0.3244949494949495,
+    "p_send": 0.0004998750312421895,
+    "n_blocks": 8
+   },
+   "verdict_independent": "weak evidence only (arrival tau=0.31, p=0.021)",
+   "verdict_conflicting": "no rule detected - consistent with noise"
+  },
+  "E1r4Psq84tHfQ6aPTvvDka4U3u8zPVD7gEUrH25RdxHL": {
+   "client": "JitoLabs",
+   "batches": 8,
+   "probes_sent": 96,
+   "landed_target_window": 89,
+   "landed_other_leader": 7,
+   "not_landed": 0,
+   "independent": {
+    "tau_fee": -0.02428571428571428,
+    "p_fee": 0.8780304923769058,
+    "tau_send": 0.34904761904761905,
+    "p_send": 0.017745563609097726,
+    "n_blocks": 10
+   },
+   "conflicting": {
+    "tau_fee": 6.938893903907228e-18,
+    "p_fee": 1.0,
+    "tau_send": 0.16666666666666666,
+    "p_send": 0.5728567858035492,
+    "n_blocks": 8
+   },
+   "all_in_block": {
+    "tau_fee": -0.18600652430636677,
+    "p_fee": 0.17720569857535617,
+    "tau_send": 0.4996151996151996,
+    "p_send": 0.00024993751562109475,
+    "n_blocks": 11
+   },
+   "across_window": {
+    "tau_fee": -0.1172344420982951,
+    "p_fee": 0.17120719820044988,
+    "tau_send": 0.29154040404040404,
+    "p_send": 0.0004998750312421895,
+    "n_blocks": 8
+   },
+   "verdict_independent": "weak evidence only (arrival tau=0.35, p=0.018)",
+   "verdict_conflicting": "no rule detected - consistent with noise"
+  },
+  "E3mDbFMr8yZcCAZx5wPUFCRmLX31u8Nnj4jPoPc54h3F": {
+   "client": "Rakurai",
+   "batches": 8,
+   "probes_sent": 96,
+   "landed_target_window": 85,
+   "landed_other_leader": 11,
+   "not_landed": 0,
+   "independent": {
+    "tau_fee": -0.03809523809523809,
+    "p_fee": 0.8482879280179955,
+    "tau_send": 0.06904761904761905,
+    "p_send": 0.7345663584103974,
+    "n_blocks": 10
+   },
+   "conflicting": {
+    "tau_fee": 0.20833333333333331,
+    "p_fee": 0.4536365908522869,
+    "tau_send": 0.20833333333333331,
+    "p_send": 0.4528867783054236,
+    "n_blocks": 8
+   },
+   "all_in_block": {
+    "tau_fee": -0.0316300989615044,
+    "p_fee": 0.844288927768058,
+    "tau_send": 0.23750491932310114,
+    "p_send": 0.10247438140464883,
+    "n_blocks": 11
+   },
+   "across_window": {
+    "tau_fee": -0.07146347422636827,
+    "p_fee": 0.4233941514621345,
+    "tau_send": 0.17316017316017315,
+    "p_send": 0.04123969007748063,
+    "n_blocks": 7
+   },
+   "verdict_independent": "no rule detected - consistent with noise",
+   "verdict_conflicting": "no rule detected - consistent with noise"
+  },
+  "EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4": {
+   "client": "Firedancer",
+   "batches": 8,
+   "probes_sent": 96,
+   "landed_target_window": 89,
+   "landed_other_leader": 4,
+   "not_landed": 3,
+   "independent": {
+    "tau_fee": 0.09610389610389611,
+    "p_fee": 0.6035991002249438,
+    "tau_send": 0.04848484848484849,
+    "p_send": 0.8050487378155461,
+    "n_blocks": 11
+   },
+   "conflicting": {
+    "tau_fee": 0.48148148148148145,
+    "p_fee": 0.06523369157710572,
+    "tau_send": 0.14814814814814814,
+    "p_send": 0.6193451637090728,
+    "n_blocks": 9
+   },
+   "all_in_block": {
+    "tau_fee": 0.029058422621627153,
+    "p_fee": 0.8410397400649837,
+    "tau_send": 0.1884199134199134,
+    "p_send": 0.16445888527868033,
+    "n_blocks": 12
+   },
+   "across_window": {
+    "tau_fee": 0.19630511017596647,
+    "p_fee": 0.019745063734066485,
+    "tau_send": 0.19570707070707072,
+    "p_send": 0.01849537615596101,
+    "n_blocks": 8
+   },
+   "verdict_independent": "no rule detected - consistent with noise",
+   "verdict_conflicting": "no rule detected - consistent with noise"
+  },
+  "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk": {
+   "client": "HarmonicAgave",
+   "batches": 8,
+   "probes_sent": 96,
+   "landed_target_window": 88,
+   "landed_other_leader": 8,
+   "not_landed": 0,
+   "independent": {
+    "tau_fee": 0.5207792207792208,
+    "p_fee": 0.00024993751562109475,
+    "tau_send": 0.24978354978354977,
+    "p_send": 0.14546363409147714,
+    "n_blocks": 11
+   },
+   "conflicting": {
+    "tau_fee": 0.2916666666666667,
+    "p_fee": 0.3164208947763059,
+    "tau_send": 0.3333333333333333,
+    "p_send": 0.2501874531367158,
+    "n_blocks": 8
+   },
+   "all_in_block": {
+    "tau_fee": 0.42484170683714967,
+    "p_fee": 0.0004998750312421895,
+    "tau_send": 0.2852813852813853,
+    "p_send": 0.029242689327668082,
+    "n_blocks": 12
+   },
+   "across_window": {
+    "tau_fee": 0.30578523548972003,
+    "p_fee": 0.0004998750312421895,
+    "tau_send": 0.23308080808080806,
+    "p_send": 0.007748062984253936,
+    "n_blocks": 8
+   },
+   "verdict_independent": "priority-fee order (partial, tau=0.52)",
+   "verdict_conflicting": "no rule detected - consistent with noise"
+  },
+  "HEL1USMZKAL2odpNBj2oCjffnFGaYwmbGmyewGv1e2TU": {
+   "client": "JitoLabs",
+   "batches": 8,
+   "probes_sent": 96,
+   "landed_target_window": 78,
+   "landed_other_leader": 18,
+   "not_landed": 0,
+   "independent": {
+    "tau_fee": 0.055026455026455014,
+    "p_fee": 0.7825543614096476,
+    "tau_send": 0.32486772486772486,
+    "p_send": 0.09997500624843789,
+    "n_blocks": 9
+   },
+   "conflicting": {
+    "tau_fee": 0.19047619047619047,
+    "p_fee": 0.47188202949262686,
+    "tau_send": 0.5238095238095238,
+    "p_send": 0.027243189202699324,
+    "n_blocks": 7
+   },
+   "all_in_block": {
+    "tau_fee": 0.1182062694624711,
+    "p_fee": 0.5048737815546114,
+    "tau_send": 0.32679653679653675,
+    "p_send": 0.03449137715571107,
+    "n_blocks": 10
+   },
+   "across_window": {
+    "tau_fee": -0.020820426955973265,
+    "p_fee": 0.818045488627843,
+    "tau_send": 0.41383219954648526,
+    "p_send": 0.00024993751562109475,
+    "n_blocks": 7
+   },
+   "verdict_independent": "no rule detected - consistent with noise",
+   "verdict_conflicting": "weak evidence only (arrival tau=0.52, p=0.027)"
+  },
+  "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b": {
+   "client": "HarmonicFiredancer",
+   "batches": 8,
+   "probes_sent": 96,
+   "landed_target_window": 86,
+   "landed_other_leader": 7,
+   "not_landed": 3,
+   "independent": {
+    "tau_fee": -0.02619047619047619,
+    "p_fee": 0.899775056235941,
+    "tau_send": 0.28095238095238095,
+    "p_send": 0.13621594601349662,
+    "n_blocks": 12
+   },
+   "conflicting": {
+    "tau_fee": 0.2777777777777778,
+    "p_fee": 0.3316670832291927,
+    "tau_send": 0.16666666666666666,
+    "p_send": 0.5846038490377405,
+    "n_blocks": 12
+   },
+   "all_in_block": {
+    "tau_fee": 0.13303838896539658,
+    "p_fee": 0.23444138965258685,
+    "tau_send": 0.03300033300033299,
+    "p_send": 0.7630592351912022,
+    "n_blocks": 13
+   },
+   "across_window": {
+    "tau_fee": 0.051641048690929676,
+    "p_fee": 0.5783554111472132,
+    "tau_send": 0.12398989898989898,
+    "p_send": 0.1659585103724069,
+    "n_blocks": 8
+   },
+   "verdict_independent": "no rule detected - consistent with noise",
+   "verdict_conflicting": "no rule detected - consistent with noise"
+  },
+  "ana2y2YvQ3ZPMwm6qhnN3nJoUSiT3qx5Pvetkq9xcfY": {
+   "client": "Rakurai",
+   "batches": 8,
+   "probes_sent": 96,
+   "landed_target_window": 93,
+   "landed_other_leader": 3,
+   "not_landed": 0,
+   "independent": {
+    "tau_fee": 0.13714285714285715,
+    "p_fee": 0.41014746313421646,
+    "tau_send": 0.4147619047619048,
+    "p_send": 0.006248437890527368,
+    "n_blocks": 10
+   },
+   "conflicting": {
+    "tau_fee": -0.20833333333333334,
+    "p_fee": 0.3511622094476381,
+    "tau_send": 0.5416666666666666,
+    "p_send": 0.006748312921769558,
+    "n_blocks": 8
+   },
+   "all_in_block": {
+    "tau_fee": -0.002637087415698016,
+    "p_fee": 0.9882529367658085,
+    "tau_send": 0.5168276168276168,
+    "p_send": 0.00024993751562109475,
+    "n_blocks": 13
+   },
+   "across_window": {
+    "tau_fee": -0.06889067128776649,
+    "p_fee": 0.4033991502124469,
+    "tau_send": 0.3125,
+    "p_send": 0.00024993751562109475,
+    "n_blocks": 8
+   },
+   "verdict_independent": "arrival order (partial, tau=0.41)",
+   "verdict_conflicting": "arrival order (partial, tau=0.54)"
+  }
+ },
+ "per_client": {
+  "Agave": {
+   "validators": 2,
+   "independent": {
+    "tau_fee": -0.15548654244306417,
+    "p_fee": 0.189952511872032,
+    "tau_send": 0.21677018633540374,
+    "p_send": 0.06573356660834791,
+    "n_blocks": 23
+   },
+   "conflicting": {
+    "tau_fee": 0.24074074074074073,
+    "p_fee": 0.17670582354411396,
+    "tau_send": 0.35185185185185186,
+    "p_send": 0.042989252686828294,
+    "n_blocks": 18
+   },
+   "across_window": {
+    "tau_fee": -0.0109936750252057,
+    "p_fee": 0.8575356160959761,
+    "tau_send": 0.289520202020202,
+    "p_send": 0.00024993751562109475,
+    "n_blocks": 16
+   },
+   "verdict_across_window": "arrival order (partial, tau=0.29)",
+   "verdict_independent": "no rule detected - consistent with noise",
+   "verdict_conflicting": "weak evidence only (arrival tau=0.35, p=0.043)"
+  },
+  "AgaveBam": {
+   "validators": 2,
+   "independent": {
+    "tau_fee": 0.2816666666666666,
+    "p_fee": 0.013496625843539115,
+    "tau_send": 0.17238095238095238,
+    "p_send": 0.15021244688827792,
+    "n_blocks": 20
+   },
+   "conflicting": {
+    "tau_fee": 0.37254901960784315,
+    "p_fee": 0.04173956510872282,
+    "tau_send": 0.29411764705882354,
+    "p_send": 0.11872031992002,
+    "n_blocks": 17
+   },
+   "across_window": {
+    "tau_fee": 0.10562381543674255,
+    "p_fee": 0.0757310672331917,
+    "tau_send": 0.22437710437710437,
+    "p_send": 0.00024993751562109475,
+    "n_blocks": 15
+   },
+   "verdict_across_window": "arrival order (partial, tau=0.22)",
+   "verdict_independent": "weak evidence only (fee tau=0.28, p=0.013)",
+   "verdict_conflicting": "weak evidence only (fee tau=0.37, p=0.042)"
+  },
+  "FireBAM": {
+   "validators": 2,
+   "independent": {
+    "tau_fee": 0.3550595238095238,
+    "p_fee": 0.001999500124968758,
+    "tau_send": 0.08750000000000001,
+    "p_send": 0.5051237190702325,
+    "n_blocks": 16
+   },
+   "conflicting": {
+    "tau_fee": 0.75,
+    "p_fee": 0.00024993751562109475,
+    "tau_send": 0.13888888888888887,
+    "p_send": 0.488127968007998,
+    "n_blocks": 12
+   },
+   "across_window": {
+    "tau_fee": 0.3701696033207153,
+    "p_fee": 0.00024993751562109475,
+    "tau_send": 0.2637085137085137,
+    "p_send": 0.0004998750312421895,
+    "n_blocks": 12
+   },
+   "verdict_across_window": "mixed: fee (tau=0.37) and arrival (tau=0.26) both matter",
+   "verdict_independent": "priority-fee order (partial, tau=0.36)",
+   "verdict_conflicting": "priority-fee order (strong, tau=0.75)"
+  },
+  "Firedancer": {
+   "validators": 2,
+   "independent": {
+    "tau_fee": 0.2430952380952381,
+    "p_fee": 0.04448887778055486,
+    "tau_send": 0.05880952380952381,
+    "p_send": 0.633341664583854,
+    "n_blocks": 20
+   },
+   "conflicting": {
+    "tau_fee": 0.5882352941176471,
+    "p_fee": 0.00024993751562109475,
+    "tau_send": 0.11764705882352941,
+    "p_send": 0.5133716570857285,
+    "n_blocks": 17
+   },
+   "across_window": {
+    "tau_fee": 0.219528917879653,
+    "p_fee": 0.0004998750312421895,
+    "tau_send": 0.2066919191919192,
+    "p_send": 0.00024993751562109475,
+    "n_blocks": 16
+   },
+   "verdict_across_window": "mixed: fee (tau=0.22) and arrival (tau=0.21) both matter",
+   "verdict_independent": "weak evidence only (fee tau=0.24, p=0.044)",
+   "verdict_conflicting": "priority-fee order (partial, tau=0.59)"
+  },
+  "HarmonicAgave": {
+   "validators": 2,
+   "independent": {
+    "tau_fee": 0.32448979591836735,
+    "p_fee": 0.004498875281179705,
+    "tau_send": 0.2655328798185941,
+    "p_send": 0.02424393901524619,
+    "n_blocks": 21
+   },
+   "conflicting": {
+    "tau_fee": 0.3111111111111111,
+    "p_fee": 0.10797300674831292,
+    "tau_send": 0.2,
+    "p_send": 0.3234191452136966,
+    "n_blocks": 15
+   },
+   "across_window": {
+    "tau_fee": 0.17350721558586274,
+    "p_fee": 0.004498875281179705,
+    "tau_send": 0.1828956228956229,
+    "p_send": 0.0032491877030742314,
+    "n_blocks": 15
+   },
+   "verdict_across_window": "mixed: fee (tau=0.17) and arrival (tau=0.18) both matter",
+   "verdict_independent": "priority-fee order (partial, tau=0.32)",
+   "verdict_conflicting": "no rule detected - consistent with noise"
+  },
+  "HarmonicFiredancer": {
+   "validators": 2,
+   "independent": {
+    "tau_fee": 0.1538302277432712,
+    "p_fee": 0.18220444888777806,
+    "tau_send": 0.17660455486542442,
+    "p_send": 0.1322169457635591,
+    "n_blocks": 23
+   },
+   "conflicting": {
+    "tau_fee": 0.31666666666666665,
+    "p_fee": 0.08622844288927768,
+    "tau_send": 0.2833333333333333,
+    "p_send": 0.13571607098225444,
+    "n_blocks": 20
+   },
+   "across_window": {
+    "tau_fee": 0.1469734454948548,
+    "p_fee": 0.019245188702824295,
+    "tau_send": 0.19457070707070706,
+    "p_send": 0.0012496875781054736,
+    "n_blocks": 16
+   },
+   "verdict_across_window": "arrival order (partial, tau=0.19)",
+   "verdict_independent": "no rule detected - consistent with noise",
+   "verdict_conflicting": "no rule detected - consistent with noise"
+  },
+  "JitoLabs": {
+   "validators": 2,
+   "independent": {
+    "tau_fee": 0.013283208020050124,
+    "p_fee": 0.9095226193451638,
+    "tau_send": 0.33759398496240606,
+    "p_send": 0.0049987503124218945,
+    "n_blocks": 19
+   },
+   "conflicting": {
+    "tau_fee": 0.08888888888888889,
+    "p_fee": 0.6550862284428893,
+    "tau_send": 0.3333333333333333,
+    "p_send": 0.06098475381154711,
+    "n_blocks": 15
+   },
+   "across_window": {
+    "tau_fee": -0.07224123503187824,
+    "p_fee": 0.24768807798050488,
+    "tau_send": 0.34860990860990865,
+    "p_send": 0.00024993751562109475,
+    "n_blocks": 15
+   },
+   "verdict_across_window": "arrival order (partial, tau=0.35)",
+   "verdict_independent": "arrival order (partial, tau=0.34)",
+   "verdict_conflicting": "no rule detected - consistent with noise"
+  },
+  "Rakurai": {
+   "validators": 2,
+   "independent": {
+    "tau_fee": 0.049523809523809526,
+    "p_fee": 0.6995751062234441,
+    "tau_send": 0.2419047619047619,
+    "p_send": 0.04173956510872282,
+    "n_blocks": 20
+   },
+   "conflicting": {
+    "tau_fee": -3.469446951953614e-18,
+    "p_fee": 1.0,
+    "tau_send": 0.375,
+    "p_send": 0.015746063484128967,
+    "n_blocks": 16
+   },
+   "across_window": {
+    "tau_fee": -0.07009131265911399,
+    "p_fee": 0.2466883279180205,
+    "tau_send": 0.24747474747474746,
+    "p_send": 0.0004998750312421895,
+    "n_blocks": 15
+   },
+   "verdict_across_window": "arrival order (partial, tau=0.25)",
+   "verdict_independent": "weak evidence only (arrival tau=0.24, p=0.042)",
+   "verdict_conflicting": "weak evidence only (arrival tau=0.38, p=0.016)"
+  }
+ },
+ "slot_in_window_by_run": {
+  "run-20261030T152829Z": {
+   "after_window": 156,
+   "0": 95,
+   "1": 720,
+   "2": 426,
+   "3": 132
+  }
+ },
+ "landing_by_fee_level": {
+  "CONF:10000": {
+   "target_window": 117,
+   "other_leader": 11
+  },
+  "CONF:200000": {
+   "target_window": 115,
+   "other_leader": 13
+  },
+  "CONF:1000000": {
+   "target_window": 116,
+   "other_leader": 12
+  },
+  "CONF:4000000": {
+   "target_window": 115,
+   "other_leader": 13
+  },
+  "IND:0": {
+   "target_window": 112,
+   "other_leader": 14,
+   "not_landed": 2
+  },
+  "IND:1000": {
+   "target_window": 116,
+   "other_leader": 12
+  },
+  "IND:10000": {
+   "target_window": 111,
+   "other_leader": 16,
+   "not_landed": 1
+  },
+  "IND:50000": {
+   "target_window": 115,
+   "other_leader": 12,
+   "not_landed": 1
+  },
+  "IND:200000": {
+   "target_window": 115,
+   "other_leader": 13
+  },
+  "IND:1000000": {
+   "target_window": 112,
+   "other_leader": 15,
+   "not_landed": 1
+  },
+  "IND:4000000": {
+   "target_window": 115,
+   "other_leader": 12,
+   "not_landed": 1
+  },
+  "IND:16000000": {
+   "target_window": 114,
+   "other_leader": 13,
+   "not_landed": 1
+  }
+ },
+ "passive_by_client": {
+  "Agave": {
+   "blocks": 64,
+   "median_rho": -0.05960766322410408,
+   "median_rho_no_tip": -0.06093046835829577,
+   "median_frac_desc_adjacent": 0.5233644859813084,
+   "median_tip_rel_pos": 0.452755905511811
+  },
+  "AgaveBam": {
+   "blocks": 64,
+   "median_rho": -0.1032184465376075,
+   "median_rho_no_tip": -0.1043230432421902,
+   "median_frac_desc_adjacent": 0.5540540540540541,
+   "median_tip_rel_pos": 0.5619596541786743
+  },
+  "FireBAM": {
+   "blocks": 64,
+   "median_rho": -0.06285400840606531,
+   "median_rho_no_tip": -0.06881898104025043,
+   "median_frac_desc_adjacent": 0.5714285714285714,
+   "median_tip_rel_pos": 0.5885167464114832
+  },
+  "Firedancer": {
+   "blocks": 64,
+   "median_rho": -0.1411643130022239,
+   "median_rho_no_tip": -0.1540275252064318,
+   "median_frac_desc_adjacent": 0.5514792899408284,
+   "median_tip_rel_pos": 0.46604527296937415
+  },
+  "HarmonicAgave": {
+   "blocks": 64,
+   "median_rho": -0.10148380425045996,
+   "median_rho_no_tip": -0.09405086890818685,
+   "median_frac_desc_adjacent": 0.5513595166163142,
+   "median_tip_rel_pos": 0.5535714285714286
+  },
+  "HarmonicFiredancer": {
+   "blocks": 64,
+   "median_rho": -0.08192061650035144,
+   "median_rho_no_tip": -0.09296426360975606,
+   "median_frac_desc_adjacent": 0.574468085106383,
+   "median_tip_rel_pos": 0.544280442804428
+  },
+  "JitoLabs": {
+   "blocks": 64,
+   "median_rho": -0.021908537125246385,
+   "median_rho_no_tip": -0.03648811536661556,
+   "median_frac_desc_adjacent": 0.5363408521303258,
+   "median_tip_rel_pos": 0.5638766519823789
+  },
+  "Rakurai": {
+   "blocks": 64,
+   "median_rho": -0.0821262345509952,
+   "median_rho_no_tip": -0.09320064920534528,
+   "median_frac_desc_adjacent": 0.5485651214128036,
+   "median_tip_rel_pos": 0.5435992578849722
+  }
+ }
+}

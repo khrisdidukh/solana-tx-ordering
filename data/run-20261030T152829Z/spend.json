@@ -1,0 +1,696 @@
+{
+ "cap_lamports": 35000000,
+ "spent_lamports": 24671440,
+ "entries": [
+  {
+   "t": 1793374119.6568608,
+   "lamports": 5000,
+   "why": "funding tx fee"
+  },
+  {
+   "t": 1793374131.606862,
+   "lamports": 192355,
+   "why": "batch 0 (worst case)"
+  },
+  {
+   "t": 1793374143.221726,
+   "lamports": 192355,
+   "why": "batch 1 (worst case)"
+  },
+  {
+   "t": 1793374157.6003819,
+   "lamports": 192355,
+   "why": "batch 2 (worst case)"
+  },
+  {
+   "t": 1793374168.1768162,
+   "lamports": 192355,
+   "why": "batch 3 (worst case)"
+  },
+  {
+   "t": 1793374180.181152,
+   "lamports": 192355,
+   "why": "batch 4 (worst case)"
+  },
+  {
+   "t": 1793374194.615995,
+   "lamports": 192355,
+   "why": "batch 5 (worst case)"
+  },
+  {
+   "t": 1793374205.840378,
+   "lamports": 192355,
+   "why": "batch 6 (worst case)"
+  },
+  {
+   "t": 1793374219.8956108,
+   "lamports": 192355,
+   "why": "batch 7 (worst case)"
+  },
+  {
+   "t": 1793374230.746171,
+   "lamports": 192355,
+   "why": "batch 8 (worst case)"
+  },
+  {
+   "t": 1793374242.943756,
+   "lamports": 192355,
+   "why": "batch 9 (worst case)"
+  },
+  {
+   "t": 1793374253.728663,
+   "lamports": 192355,
+   "why": "batch 10 (worst case)"
+  },
+  {
+   "t": 1793374266.176745,
+   "lamports": 192355,
+   "why": "batch 11 (worst case)"
+  },
+  {
+   "t": 1793374278.414179,
+   "lamports": 192355,
+   "why": "batch 12 (worst case)"
+  },
+  {
+   "t": 1793374291.094749,
+   "lamports": 192355,
+   "why": "batch 13 (worst case)"
+  },
+  {
+   "t": 1793374305.418387,
+   "lamports": 192355,
+   "why": "batch 14 (worst case)"
+  },
+  {
+   "t": 1793374317.1884632,
+   "lamports": 192355,
+   "why": "batch 15 (worst case)"
+  },
+  {
+   "t": 1793374329.5757198,
+   "lamports": 192355,
+   "why": "batch 16 (worst case)"
+  },
+  {
+   "t": 1793374341.911873,
+   "lamports": 192355,
+   "why": "batch 17 (worst case)"
+  },
+  {
+   "t": 1793374354.951126,
+   "lamports": 192355,
+   "why": "batch 18 (worst case)"
+  },
+  {
+   "t": 1793374366.2413802,
+   "lamports": 192355,
+   "why": "batch 19 (worst case)"
+  },
+  {
+   "t": 1793374378.3247402,
+   "lamports": 192355,
+   "why": "batch 20 (worst case)"
+  },
+  {
+   "t": 1793374390.262448,
+   "lamports": 192355,
+   "why": "batch 21 (worst case)"
+  },
+  {
+   "t": 1793374406.2953448,
+   "lamports": 192355,
+   "why": "batch 22 (worst case)"
+  },
+  {
+   "t": 1793374421.289014,
+   "lamports": 192355,
+   "why": "batch 23 (worst case)"
+  },
+  {
+   "t": 1793374435.270725,
+   "lamports": 192355,
+   "why": "batch 24 (worst case)"
+  },
+  {
+   "t": 1793374449.627581,
+   "lamports": 192355,
+   "why": "batch 25 (worst case)"
+  },
+  {
+   "t": 1793374466.031283,
+   "lamports": 192355,
+   "why": "batch 26 (worst case)"
+  },
+  {
+   "t": 1793374478.4384089,
+   "lamports": 192355,
+   "why": "batch 27 (worst case)"
+  },
+  {
+   "t": 1793374489.447972,
+   "lamports": 192355,
+   "why": "batch 28 (worst case)"
+  },
+  {
+   "t": 1793374500.6556559,
+   "lamports": 192355,
+   "why": "batch 29 (worst case)"
+  },
+  {
+   "t": 1793374524.091707,
+   "lamports": 192355,
+   "why": "batch 30 (worst case)"
+  },
+  {
+   "t": 1793374535.2354171,
+   "lamports": 192355,
+   "why": "batch 31 (worst case)"
+  },
+  {
+   "t": 1793374545.857378,
+   "lamports": 192355,
+   "why": "batch 32 (worst case)"
+  },
+  {
+   "t": 1793374557.802486,
+   "lamports": 192355,
+   "why": "batch 33 (worst case)"
+  },
+  {
+   "t": 1793374568.826397,
+   "lamports": 192355,
+   "why": "batch 34 (worst case)"
+  },
+  {
+   "t": 1793374579.4173021,
+   "lamports": 192355,
+   "why": "batch 35 (worst case)"
+  },
+  {
+   "t": 1793374590.254545,
+   "lamports": 192355,
+   "why": "batch 36 (worst case)"
+  },
+  {
+   "t": 1793374601.3291361,
+   "lamports": 192355,
+   "why": "batch 37 (worst case)"
+  },
+  {
+   "t": 1793374616.596225,
+   "lamports": 192355,
+   "why": "batch 38 (worst case)"
+  },
+  {
+   "t": 1793374632.805183,
+   "lamports": 192355,
+   "why": "batch 39 (worst case)"
+  },
+  {
+   "t": 1793374650.118376,
+   "lamports": 192355,
+   "why": "batch 40 (worst case)"
+  },
+  {
+   "t": 1793374662.460952,
+   "lamports": 192355,
+   "why": "batch 41 (worst case)"
+  },
+  {
+   "t": 1793374675.614144,
+   "lamports": 192355,
+   "why": "batch 42 (worst case)"
+  },
+  {
+   "t": 1793374688.930569,
+   "lamports": 192355,
+   "why": "batch 43 (worst case)"
+  },
+  {
+   "t": 1793374705.9770298,
+   "lamports": 192355,
+   "why": "batch 44 (worst case)"
+  },
+  {
+   "t": 1793374720.694319,
+   "lamports": 192355,
+   "why": "batch 45 (worst case)"
+  },
+  {
+   "t": 1793374736.6002371,
+   "lamports": 192355,
+   "why": "batch 46 (worst case)"
+  },
+  {
+   "t": 1793374748.363141,
+   "lamports": 192355,
+   "why": "batch 47 (worst case)"
+  },
+  {
+   "t": 1793374767.529699,
+   "lamports": 192355,
+   "why": "batch 48 (worst case)"
+  },
+  {
+   "t": 1793374778.5180259,
+   "lamports": 192355,
+   "why": "batch 49 (worst case)"
+  },
+  {
+   "t": 1793374801.714997,
+   "lamports": 192355,
+   "why": "batch 50 (worst case)"
+  },
+  {
+   "t": 1793374817.648938,
+   "lamports": 192355,
+   "why": "batch 51 (worst case)"
+  },
+  {
+   "t": 1793374832.3296928,
+   "lamports": 192355,
+   "why": "batch 52 (worst case)"
+  },
+  {
+   "t": 1793374862.64624,
+   "lamports": 192355,
+   "why": "batch 53 (worst case)"
+  },
+  {
+   "t": 1793374877.943722,
+   "lamports": 192355,
+   "why": "batch 54 (worst case)"
+  },
+  {
+   "t": 1793374892.437911,
+   "lamports": 192355,
+   "why": "batch 55 (worst case)"
+  },
+  {
+   "t": 1793374907.790591,
+   "lamports": 192355,
+   "why": "batch 56 (worst case)"
+  },
+  {
+   "t": 1793374919.736674,
+   "lamports": 192355,
+   "why": "batch 57 (worst case)"
+  },
+  {
+   "t": 1793374938.420567,
+   "lamports": 192355,
+   "why": "batch 58 (worst case)"
+  },
+  {
+   "t": 1793374950.5529659,
+   "lamports": 192355,
+   "why": "batch 59 (worst case)"
+  },
+  {
+   "t": 1793374966.791049,
+   "lamports": 192355,
+   "why": "batch 60 (worst case)"
+  },
+  {
+   "t": 1793374980.17717,
+   "lamports": 192355,
+   "why": "batch 61 (worst case)"
+  },
+  {
+   "t": 1793374995.567585,
+   "lamports": 192355,
+   "why": "batch 62 (worst case)"
+  },
+  {
+   "t": 1793375007.03597,
+   "lamports": 192355,
+   "why": "batch 63 (worst case)"
+  },
+  {
+   "t": 1793375032.1132731,
+   "lamports": 192355,
+   "why": "batch 64 (worst case)"
+  },
+  {
+   "t": 1793375044.9359128,
+   "lamports": 192355,
+   "why": "batch 65 (worst case)"
+  },
+  {
+   "t": 1793375059.094177,
+   "lamports": 192355,
+   "why": "batch 66 (worst case)"
+  },
+  {
+   "t": 1793375073.191946,
+   "lamports": 192355,
+   "why": "batch 67 (worst case)"
+  },
+  {
+   "t": 1793375090.805575,
+   "lamports": 192355,
+   "why": "batch 68 (worst case)"
+  },
+  {
+   "t": 1793375115.135329,
+   "lamports": 192355,
+   "why": "batch 69 (worst case)"
+  },
+  {
+   "t": 1793375152.921228,
+   "lamports": 192355,
+   "why": "batch 70 (worst case)"
+  },
+  {
+   "t": 1793375167.3992279,
+   "lamports": 192355,
+   "why": "batch 71 (worst case)"
+  },
+  {
+   "t": 1793375181.506355,
+   "lamports": 192355,
+   "why": "batch 72 (worst case)"
+  },
+  {
+   "t": 1793375193.565474,
+   "lamports": 192355,
+   "why": "batch 73 (worst case)"
+  },
+  {
+   "t": 1793375217.408788,
+   "lamports": 192355,
+   "why": "batch 74 (worst case)"
+  },
+  {
+   "t": 1793375239.702378,
+   "lamports": 192355,
+   "why": "batch 75 (worst case)"
+  },
+  {
+   "t": 1793375252.490304,
+   "lamports": 192355,
+   "why": "batch 76 (worst case)"
+  },
+  {
+   "t": 1793375272.206578,
+   "lamports": 192355,
+   "why": "batch 77 (worst case)"
+  },
+  {
+   "t": 1793375289.2001128,
+   "lamports": 192355,
+   "why": "batch 78 (worst case)"
+  },
+  {
+   "t": 1793375301.361247,
+   "lamports": 192355,
+   "why": "batch 79 (worst case)"
+  },
+  {
+   "t": 1793375325.013116,
+   "lamports": 192355,
+   "why": "batch 80 (worst case)"
+  },
+  {
+   "t": 1793375340.421451,
+   "lamports": 192355,
+   "why": "batch 81 (worst case)"
+  },
+  {
+   "t": 1793375357.719349,
+   "lamports": 192355,
+   "why": "batch 82 (worst case)"
+  },
+  {
+   "t": 1793375387.763364,
+   "lamports": 192355,
+   "why": "batch 83 (worst case)"
+  },
+  {
+   "t": 1793375401.426633,
+   "lamports": 192355,
+   "why": "batch 84 (worst case)"
+  },
+  {
+   "t": 1793375426.068887,
+   "lamports": 192355,
+   "why": "batch 85 (worst case)"
+  },
+  {
+   "t": 1793375441.656542,
+   "lamports": 192355,
+   "why": "batch 86 (worst case)"
+  },
+  {
+   "t": 1793375452.816333,
+   "lamports": 192355,
+   "why": "batch 87 (worst case)"
+  },
+  {
+   "t": 1793375484.075944,
+   "lamports": 192355,
+   "why": "batch 88 (worst case)"
+  },
+  {
+   "t": 1793375505.827032,
+   "lamports": 192355,
+   "why": "batch 89 (worst case)"
+  },
+  {
+   "t": 1793375523.338602,
+   "lamports": 192355,
+   "why": "batch 90 (worst case)"
+  },
+  {
+   "t": 1793375553.9855208,
+   "lamports": 192355,
+   "why": "batch 91 (worst case)"
+  },
+  {
+   "t": 1793375609.844646,
+   "lamports": 192355,
+   "why": "batch 92 (worst case)"
+  },
+  {
+   "t": 1793375625.892129,
+   "lamports": 192355,
+   "why": "batch 93 (worst case)"
+  },
+  {
+   "t": 1793375641.095446,
+   "lamports": 192355,
+   "why": "batch 94 (worst case)"
+  },
+  {
+   "t": 1793375725.4264529,
+   "lamports": 192355,
+   "why": "batch 95 (worst case)"
+  },
+  {
+   "t": 1793375865.917399,
+   "lamports": 192355,
+   "why": "batch 96 (worst case)"
+  },
+  {
+   "t": 1793375896.111635,
+   "lamports": 192355,
+   "why": "batch 97 (worst case)"
+  },
+  {
+   "t": 1793375920.558511,
+   "lamports": 192355,
+   "why": "batch 98 (worst case)"
+  },
+  {
+   "t": 1793375934.083649,
+   "lamports": 192355,
+   "why": "batch 99 (worst case)"
+  },
+  {
+   "t": 1793376013.093027,
+   "lamports": 192355,
+   "why": "batch 100 (worst case)"
+  },
+  {
+   "t": 1793376030.699182,
+   "lamports": 192355,
+   "why": "batch 101 (worst case)"
+  },
+  {
+   "t": 1793376069.555553,
+   "lamports": 192355,
+   "why": "batch 102 (worst case)"
+  },
+  {
+   "t": 1793376108.827733,
+   "lamports": 192355,
+   "why": "batch 103 (worst case)"
+  },
+  {
+   "t": 1793376124.064534,
+   "lamports": 192355,
+   "why": "batch 104 (worst case)"
+  },
+  {
+   "t": 1793376138.0140119,
+   "lamports": 192355,
+   "why": "batch 105 (worst case)"
+  },
+  {
+   "t": 1793376208.350375,
+   "lamports": 192355,
+   "why": "batch 106 (worst case)"
+  },
+  {
+   "t": 1793376221.2944992,
+   "lamports": 192355,
+   "why": "batch 107 (worst case)"
+  },
+  {
+   "t": 1793376374.499691,
+   "lamports": 192355,
+   "why": "batch 108 (worst case)"
+  },
+  {
+   "t": 1793376393.999936,
+   "lamports": 192355,
+   "why": "batch 109 (worst case)"
+  },
+  {
+   "t": 1793376442.00812,
+   "lamports": 192355,
+   "why": "batch 110 (worst case)"
+  },
+  {
+   "t": 1793376459.932204,
+   "lamports": 192355,
+   "why": "batch 111 (worst case)"
+  },
+  {
+   "t": 1793376481.2159119,
+   "lamports": 192355,
+   "why": "batch 112 (worst case)"
+  },
+  {
+   "t": 1793376538.079762,
+   "lamports": 192355,
+   "why": "batch 113 (worst case)"
+  },
+  {
+   "t": 1793376552.3512352,
+   "lamports": 192355,
+   "why": "batch 114 (worst case)"
+  },
+  {
+   "t": 1793376787.72702,
+   "lamports": 192355,
+   "why": "batch 115 (worst case)"
+  },
+  {
+   "t": 1793376955.890125,
+   "lamports": 192355,
+   "why": "batch 116 (worst case)"
+  },
+  {
+   "t": 1793377099.6775339,
+   "lamports": 192355,
+   "why": "batch 117 (worst case)"
+  },
+  {
+   "t": 1793377238.2913659,
+   "lamports": 192355,
+   "why": "batch 118 (worst case)"
+  },
+  {
+   "t": 1793377262.7193549,
+   "lamports": 192355,
+   "why": "batch 119 (worst case)"
+  },
+  {
+   "t": 1793377299.087426,
+   "lamports": 192355,
+   "why": "batch 120 (worst case)"
+  },
+  {
+   "t": 1793377515.689022,
+   "lamports": 192355,
+   "why": "batch 121 (worst case)"
+  },
+  {
+   "t": 1793377536.3455622,
+   "lamports": 192355,
+   "why": "batch 122 (worst case)"
+  },
+  {
+   "t": 1793378026.947049,
+   "lamports": 192355,
+   "why": "batch 123 (worst case)"
+  },
+  {
+   "t": 1793378816.6091,
+   "lamports": 192355,
+   "why": "batch 124 (worst case)"
+  },
+  {
+   "t": 1793378974.7663648,
+   "lamports": 192355,
+   "why": "batch 125 (worst case)"
+  },
+  {
+   "t": 1793379345.402665,
+   "lamports": 192355,
+   "why": "batch 126 (worst case)"
+  },
+  {
+   "t": 1793379474.070337,
+   "lamports": 192355,
+   "why": "batch 127 (worst case)"
+  },
+  {
+   "t": 1793380892.1545012,
+   "lamports": 5000,
+   "why": "sweep tx fee"
+  },
+  {
+   "t": 1793380892.238444,
+   "lamports": 5000,
+   "why": "sweep tx fee"
+  },
+  {
+   "t": 1793380892.3992372,
+   "lamports": 5000,
+   "why": "sweep tx fee"
+  },
+  {
+   "t": 1793380892.469307,
+   "lamports": 5000,
+   "why": "sweep tx fee"
+  },
+  {
+   "t": 1793380892.552572,
+   "lamports": 5000,
+   "why": "sweep tx fee"
+  },
+  {
+   "t": 1793380892.669714,
+   "lamports": 5000,
+   "why": "sweep tx fee"
+  },
+  {
+   "t": 1793380892.743975,
+   "lamports": 5000,
+   "why": "sweep tx fee"
+  },
+  {
+   "t": 1793380892.895317,
+   "lamports": 5000,
+   "why": "sweep tx fee"
+  },
+  {
+   "t": 1793380892.9906712,
+   "lamports": 5000,
+   "why": "sweep tx fee"
+  }
+ ]
+}

@@ -1,0 +1,1282 @@
+[
+ {
+  "window_start": 463335864,
+  "leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+  "client": "HarmonicFiredancer",
+  "version": "26.10.5",
+  "stake_share": 0.022327529030199418,
+  "tpu_quic": "198.13.140.105:12349",
+  "gossip": "88.216.36.133:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463335916,
+  "leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+  "client": "HarmonicAgave",
+  "version": "4.4.0-rc.1",
+  "stake_share": 0.03921327342415384,
+  "tpu_quic": "198.13.140.105:12341",
+  "gossip": "189.1.171.215:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463335984,
+  "leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+  "client": "HarmonicFiredancer",
+  "version": "26.10.5",
+  "stake_share": 0.022327529030199418,
+  "tpu_quic": "198.13.140.105:12349",
+  "gossip": "88.216.36.133:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463336036,
+  "leader": "HEL1USMZKAL2odpNBj2oCjffnFGaYwmbGmyewGv1e2TU",
+  "client": "JitoLabs",
+  "version": "4.3.2",
+  "stake_share": 0.0385488600035685,
+  "tpu_quic": "64.130.57.215:8002",
+  "gossip": "64.130.57.215:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463336092,
+  "leader": "HEL1USMZKAL2odpNBj2oCjffnFGaYwmbGmyewGv1e2TU",
+  "client": "JitoLabs",
+  "version": "4.3.2",
+  "stake_share": 0.0385488600035685,
+  "tpu_quic": "64.130.57.215:8002",
+  "gossip": "64.130.57.215:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463336160,
+  "leader": "E1r4Psq84tHfQ6aPTvvDka4U3u8zPVD7gEUrH25RdxHL",
+  "client": "JitoLabs",
+  "version": "4.3.2",
+  "stake_share": 0.024274430906557138,
+  "tpu_quic": "64.130.32.153:8002",
+  "gossip": "64.130.32.153:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463336212,
+  "leader": "HEL1USMZKAL2odpNBj2oCjffnFGaYwmbGmyewGv1e2TU",
+  "client": "JitoLabs",
+  "version": "4.3.2",
+  "stake_share": 0.0385488600035685,
+  "tpu_quic": "64.130.57.215:8002",
+  "gossip": "64.130.57.215:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463336276,
+  "leader": "Awes4Tr6TX8JDzEhCZY2QVNimT6iD1zWHzf1vNyGvpLM",
+  "client": "HarmonicFiredancer",
+  "version": "26.10.5",
+  "stake_share": 0.016182999104916995,
+  "tpu_quic": "198.13.140.105:12351",
+  "gossip": "94.158.242.125:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463336328,
+  "leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+  "client": "HarmonicFiredancer",
+  "version": "26.10.5",
+  "stake_share": 0.022327529030199418,
+  "tpu_quic": "198.13.140.105:12349",
+  "gossip": "88.216.36.133:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463336384,
+  "leader": "EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4",
+  "client": "Firedancer",
+  "version": "26.10.4",
+  "stake_share": 0.017982703913970596,
+  "tpu_quic": "104.204.143.114:9007",
+  "gossip": "104.204.143.114:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463336436,
+  "leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+  "client": "HarmonicAgave",
+  "version": "4.4.0-rc.1",
+  "stake_share": 0.03921327342415384,
+  "tpu_quic": "198.13.140.105:12341",
+  "gossip": "189.1.171.215:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463336496,
+  "leader": "9eGrDohdNTAo61DRHyfMuqKWXqYnA3i254Wiszxe8FoY",
+  "client": "Firedancer",
+  "version": "26.10.5",
+  "stake_share": 0.016283875959120522,
+  "tpu_quic": "86.54.152.246:9007",
+  "gossip": "86.54.152.246:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463336552,
+  "leader": "HEL1USMZKAL2odpNBj2oCjffnFGaYwmbGmyewGv1e2TU",
+  "client": "JitoLabs",
+  "version": "4.3.2",
+  "stake_share": 0.0385488600035685,
+  "tpu_quic": "64.130.57.215:8002",
+  "gossip": "64.130.57.215:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463336612,
+  "leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+  "client": "AgaveBam",
+  "version": "4.4.0-rc.1",
+  "stake_share": 0.02986202974617442,
+  "tpu_quic": "208.91.105.53:5010",
+  "gossip": "67.202.63.79:8000",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463336680,
+  "leader": "HEL1USMZKAL2odpNBj2oCjffnFGaYwmbGmyewGv1e2TU",
+  "client": "JitoLabs",
+  "version": "4.3.2",
+  "stake_share": 0.0385488600035685,
+  "tpu_quic": "64.130.57.215:8002",
+  "gossip": "64.130.57.215:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463336736,
+  "leader": "E1r4Psq84tHfQ6aPTvvDka4U3u8zPVD7gEUrH25RdxHL",
+  "client": "JitoLabs",
+  "version": "4.3.2",
+  "stake_share": 0.024274430906557138,
+  "tpu_quic": "64.130.32.153:8002",
+  "gossip": "64.130.32.153:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463336792,
+  "leader": "HEL1USMZKAL2odpNBj2oCjffnFGaYwmbGmyewGv1e2TU",
+  "client": "JitoLabs",
+  "version": "4.3.2",
+  "stake_share": 0.0385488600035685,
+  "tpu_quic": "64.130.57.215:8002",
+  "gossip": "64.130.57.215:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463336852,
+  "leader": "EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4",
+  "client": "Firedancer",
+  "version": "26.10.4",
+  "stake_share": 0.017982703913970596,
+  "tpu_quic": "104.204.143.114:9007",
+  "gossip": "104.204.143.114:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463336912,
+  "leader": "9eGrDohdNTAo61DRHyfMuqKWXqYnA3i254Wiszxe8FoY",
+  "client": "Firedancer",
+  "version": "26.10.5",
+  "stake_share": 0.016283875959120522,
+  "tpu_quic": "86.54.152.246:9007",
+  "gossip": "86.54.152.246:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463336964,
+  "leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+  "client": "HarmonicAgave",
+  "version": "4.4.0-rc.1",
+  "stake_share": 0.03921327342415384,
+  "tpu_quic": "198.13.140.105:12341",
+  "gossip": "189.1.171.215:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463337020,
+  "leader": "CAo1dCGYrB6NhHh5xb1cGjUiu86iyCfMTENxgHumSve4",
+  "client": "HarmonicAgave",
+  "version": "4.3.2",
+  "stake_share": 0.02189678835379438,
+  "tpu_quic": "64.130.46.242:12291",
+  "gossip": "67.208.234.129:8000",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463337076,
+  "leader": "EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4",
+  "client": "Firedancer",
+  "version": "26.10.4",
+  "stake_share": 0.017982703913970596,
+  "tpu_quic": "104.204.143.114:9007",
+  "gossip": "104.204.143.114:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463337152,
+  "leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+  "client": "AgaveBam",
+  "version": "4.4.0-rc.1",
+  "stake_share": 0.02986202974617442,
+  "tpu_quic": "208.91.105.53:5010",
+  "gossip": "67.202.63.79:8000",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463337220,
+  "leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+  "client": "AgaveBam",
+  "version": "4.4.0-rc.1",
+  "stake_share": 0.02986202974617442,
+  "tpu_quic": "208.91.105.53:5010",
+  "gossip": "67.202.63.79:8000",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463337284,
+  "leader": "CAo1dCGYrB6NhHh5xb1cGjUiu86iyCfMTENxgHumSve4",
+  "client": "HarmonicAgave",
+  "version": "4.3.2",
+  "stake_share": 0.02189678835379438,
+  "tpu_quic": "64.130.46.242:12291",
+  "gossip": "67.208.234.129:8000",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463337352,
+  "leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+  "client": "HarmonicAgave",
+  "version": "4.4.0-rc.1",
+  "stake_share": 0.03921327342415384,
+  "tpu_quic": "198.13.140.105:12341",
+  "gossip": "189.1.171.215:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463337428,
+  "leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+  "client": "HarmonicAgave",
+  "version": "4.4.0-rc.1",
+  "stake_share": 0.03921327342415384,
+  "tpu_quic": "198.13.140.105:12341",
+  "gossip": "189.1.171.215:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463337484,
+  "leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+  "client": "FireBAM",
+  "version": "26.10.5",
+  "stake_share": 0.010348720840960597,
+  "tpu_quic": "198.13.140.227:5010",
+  "gossip": "64.130.40.243:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463337536,
+  "leader": "5Cchr1XGEg7dbBXByV5NY2ad8jfxAM7HA3x8D56rq9Ux",
+  "client": "AgaveBam",
+  "version": "4.3.2",
+  "stake_share": 0.013229022997460269,
+  "tpu_quic": "63.254.180.11:5010",
+  "gossip": "184.35.36.96:37000",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463337588,
+  "leader": "HEL1USMZKAL2odpNBj2oCjffnFGaYwmbGmyewGv1e2TU",
+  "client": "JitoLabs",
+  "version": "4.3.2",
+  "stake_share": 0.0385488600035685,
+  "tpu_quic": "64.130.57.215:8002",
+  "gossip": "64.130.57.215:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463337696,
+  "leader": "EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4",
+  "client": "Firedancer",
+  "version": "26.10.4",
+  "stake_share": 0.017982703913970596,
+  "tpu_quic": "104.204.143.114:9007",
+  "gossip": "104.204.143.114:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463337748,
+  "leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+  "client": "HarmonicFiredancer",
+  "version": "26.10.5",
+  "stake_share": 0.022327529030199418,
+  "tpu_quic": "198.13.140.105:12349",
+  "gossip": "88.216.36.133:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463337800,
+  "leader": "HEL1USMZKAL2odpNBj2oCjffnFGaYwmbGmyewGv1e2TU",
+  "client": "JitoLabs",
+  "version": "4.3.2",
+  "stake_share": 0.0385488600035685,
+  "tpu_quic": "64.130.57.215:8002",
+  "gossip": "64.130.57.215:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463337856,
+  "leader": "E3mDbFMr8yZcCAZx5wPUFCRmLX31u8Nnj4jPoPc54h3F",
+  "client": "Rakurai",
+  "version": "4.3.2",
+  "stake_share": 0.002052982242314621,
+  "tpu_quic": "57.129.52.202:8002",
+  "gossip": "57.129.52.202:8000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463337908,
+  "leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+  "client": "FireBAM",
+  "version": "26.10.5",
+  "stake_share": 0.010348720840960597,
+  "tpu_quic": "198.13.140.227:5010",
+  "gossip": "64.130.40.243:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463337960,
+  "leader": "EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4",
+  "client": "Firedancer",
+  "version": "26.10.4",
+  "stake_share": 0.017982703913970596,
+  "tpu_quic": "104.204.143.114:9007",
+  "gossip": "104.204.143.114:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463338012,
+  "leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+  "client": "HarmonicAgave",
+  "version": "4.4.0-rc.1",
+  "stake_share": 0.03921327342415384,
+  "tpu_quic": "198.13.140.105:12341",
+  "gossip": "189.1.171.215:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463338064,
+  "leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+  "client": "FireBAM",
+  "version": "26.10.5",
+  "stake_share": 0.010348720840960597,
+  "tpu_quic": "198.13.140.227:5010",
+  "gossip": "64.130.40.243:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463338136,
+  "leader": "EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4",
+  "client": "Firedancer",
+  "version": "26.10.4",
+  "stake_share": 0.017982703913970596,
+  "tpu_quic": "104.204.143.114:9007",
+  "gossip": "104.204.143.114:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463338212,
+  "leader": "ana2y2YvQ3ZPMwm6qhnN3nJoUSiT3qx5Pvetkq9xcfY",
+  "client": "Rakurai",
+  "version": "4.3.2",
+  "stake_share": 0.005703490269110272,
+  "tpu_quic": "45.77.64.138:8002",
+  "gossip": "45.77.64.138:8000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463338292,
+  "leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+  "client": "HarmonicAgave",
+  "version": "4.4.0-rc.1",
+  "stake_share": 0.03921327342415384,
+  "tpu_quic": "198.13.140.105:12341",
+  "gossip": "189.1.171.215:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463338348,
+  "leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+  "client": "HarmonicFiredancer",
+  "version": "26.10.5",
+  "stake_share": 0.022327529030199418,
+  "tpu_quic": "198.13.140.105:12349",
+  "gossip": "88.216.36.133:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463338408,
+  "leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+  "client": "AgaveBam",
+  "version": "4.4.0-rc.1",
+  "stake_share": 0.02986202974617442,
+  "tpu_quic": "208.91.105.53:5010",
+  "gossip": "67.202.63.79:8000",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463338472,
+  "leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+  "client": "HarmonicFiredancer",
+  "version": "26.10.5",
+  "stake_share": 0.022327529030199418,
+  "tpu_quic": "198.13.140.105:12349",
+  "gossip": "88.216.36.133:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463338552,
+  "leader": "EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4",
+  "client": "Firedancer",
+  "version": "26.10.4",
+  "stake_share": 0.017982703913970596,
+  "tpu_quic": "104.204.143.114:9007",
+  "gossip": "104.204.143.114:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463338620,
+  "leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+  "client": "HarmonicAgave",
+  "version": "4.4.0-rc.1",
+  "stake_share": 0.03921327342415384,
+  "tpu_quic": "198.13.140.105:12341",
+  "gossip": "189.1.171.215:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463338696,
+  "leader": "9eGrDohdNTAo61DRHyfMuqKWXqYnA3i254Wiszxe8FoY",
+  "client": "Firedancer",
+  "version": "26.10.5",
+  "stake_share": 0.016283875959120522,
+  "tpu_quic": "86.54.152.246:9007",
+  "gossip": "86.54.152.246:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463338752,
+  "leader": "E1r4Psq84tHfQ6aPTvvDka4U3u8zPVD7gEUrH25RdxHL",
+  "client": "JitoLabs",
+  "version": "4.3.2",
+  "stake_share": 0.024274430906557138,
+  "tpu_quic": "64.130.32.153:8002",
+  "gossip": "64.130.32.153:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463338840,
+  "leader": "9eGrDohdNTAo61DRHyfMuqKWXqYnA3i254Wiszxe8FoY",
+  "client": "Firedancer",
+  "version": "26.10.5",
+  "stake_share": 0.016283875959120522,
+  "tpu_quic": "86.54.152.246:9007",
+  "gossip": "86.54.152.246:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463338892,
+  "leader": "5Cchr1XGEg7dbBXByV5NY2ad8jfxAM7HA3x8D56rq9Ux",
+  "client": "AgaveBam",
+  "version": "4.3.2",
+  "stake_share": 0.013229022997460269,
+  "tpu_quic": "63.254.180.11:5010",
+  "gossip": "184.35.36.96:37000",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463339000,
+  "leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+  "client": "HarmonicFiredancer",
+  "version": "26.10.5",
+  "stake_share": 0.022327529030199418,
+  "tpu_quic": "198.13.140.105:12349",
+  "gossip": "88.216.36.133:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463339076,
+  "leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+  "client": "AgaveBam",
+  "version": "4.4.0-rc.1",
+  "stake_share": 0.02986202974617442,
+  "tpu_quic": "208.91.105.53:5010",
+  "gossip": "67.202.63.79:8000",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463339144,
+  "leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+  "client": "AgaveBam",
+  "version": "4.4.0-rc.1",
+  "stake_share": 0.02986202974617442,
+  "tpu_quic": "208.91.105.53:5010",
+  "gossip": "67.202.63.79:8000",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463339284,
+  "leader": "CAo1dCGYrB6NhHh5xb1cGjUiu86iyCfMTENxgHumSve4",
+  "client": "HarmonicAgave",
+  "version": "4.3.2",
+  "stake_share": 0.02189678835379438,
+  "tpu_quic": "64.130.46.242:12291",
+  "gossip": "67.208.234.129:8000",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463339356,
+  "leader": "A4hyMd3FyvUJSRafDUSwtLLaQcxRP4r1BRC9w2AJ1to2",
+  "client": "FireBAM",
+  "version": "26.10.5",
+  "stake_share": 0.0008193491953697034,
+  "tpu_quic": "64.130.52.171:5010",
+  "gossip": "198.13.134.14:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463339424,
+  "leader": "CAo1dCGYrB6NhHh5xb1cGjUiu86iyCfMTENxgHumSve4",
+  "client": "HarmonicAgave",
+  "version": "4.3.2",
+  "stake_share": 0.02189678835379438,
+  "tpu_quic": "64.130.46.242:12291",
+  "gossip": "67.208.234.129:8000",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463339496,
+  "leader": "9eGrDohdNTAo61DRHyfMuqKWXqYnA3i254Wiszxe8FoY",
+  "client": "Firedancer",
+  "version": "26.10.5",
+  "stake_share": 0.016283875959120522,
+  "tpu_quic": "86.54.152.246:9007",
+  "gossip": "86.54.152.246:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463339552,
+  "leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+  "client": "HarmonicFiredancer",
+  "version": "26.10.5",
+  "stake_share": 0.022327529030199418,
+  "tpu_quic": "198.13.140.105:12349",
+  "gossip": "88.216.36.133:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463339640,
+  "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+  "client": "Agave",
+  "version": "4.3.2",
+  "stake_share": 0.004333804264059741,
+  "tpu_quic": "5.199.172.176:12002",
+  "gossip": "5.199.172.176:12000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463339696,
+  "leader": "EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4",
+  "client": "Firedancer",
+  "version": "26.10.4",
+  "stake_share": 0.017982703913970596,
+  "tpu_quic": "104.204.143.114:9007",
+  "gossip": "104.204.143.114:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463339772,
+  "leader": "E3mDbFMr8yZcCAZx5wPUFCRmLX31u8Nnj4jPoPc54h3F",
+  "client": "Rakurai",
+  "version": "4.3.2",
+  "stake_share": 0.002052982242314621,
+  "tpu_quic": "57.129.52.202:8002",
+  "gossip": "57.129.52.202:8000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463339836,
+  "leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+  "client": "AgaveBam",
+  "version": "4.4.0-rc.1",
+  "stake_share": 0.02986202974617442,
+  "tpu_quic": "208.91.105.53:5010",
+  "gossip": "67.202.63.79:8000",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463339908,
+  "leader": "9eGrDohdNTAo61DRHyfMuqKWXqYnA3i254Wiszxe8FoY",
+  "client": "Firedancer",
+  "version": "26.10.5",
+  "stake_share": 0.016283875959120522,
+  "tpu_quic": "86.54.152.246:9007",
+  "gossip": "86.54.152.246:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463339960,
+  "leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+  "client": "AgaveBam",
+  "version": "4.4.0-rc.1",
+  "stake_share": 0.02986202974617442,
+  "tpu_quic": "208.91.105.53:5010",
+  "gossip": "67.202.63.79:8000",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463340076,
+  "leader": "Awes4Tr6TX8JDzEhCZY2QVNimT6iD1zWHzf1vNyGvpLM",
+  "client": "HarmonicFiredancer",
+  "version": "26.10.5",
+  "stake_share": 0.016182999104916995,
+  "tpu_quic": "198.13.140.105:12351",
+  "gossip": "94.158.242.125:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463340136,
+  "leader": "5Cchr1XGEg7dbBXByV5NY2ad8jfxAM7HA3x8D56rq9Ux",
+  "client": "AgaveBam",
+  "version": "4.3.2",
+  "stake_share": 0.013229022997460269,
+  "tpu_quic": "63.254.180.11:5010",
+  "gossip": "184.35.36.96:37000",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463340204,
+  "leader": "9eGrDohdNTAo61DRHyfMuqKWXqYnA3i254Wiszxe8FoY",
+  "client": "Firedancer",
+  "version": "26.10.5",
+  "stake_share": 0.016283875959120522,
+  "tpu_quic": "86.54.152.246:9007",
+  "gossip": "86.54.152.246:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463340268,
+  "leader": "E1r4Psq84tHfQ6aPTvvDka4U3u8zPVD7gEUrH25RdxHL",
+  "client": "JitoLabs",
+  "version": "4.3.2",
+  "stake_share": 0.024274430906557138,
+  "tpu_quic": "64.130.32.153:8002",
+  "gossip": "64.130.32.153:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463340352,
+  "leader": "Awes4Tr6TX8JDzEhCZY2QVNimT6iD1zWHzf1vNyGvpLM",
+  "client": "HarmonicFiredancer",
+  "version": "26.10.5",
+  "stake_share": 0.016182999104916995,
+  "tpu_quic": "198.13.140.105:12351",
+  "gossip": "94.158.242.125:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463340464,
+  "leader": "E3mDbFMr8yZcCAZx5wPUFCRmLX31u8Nnj4jPoPc54h3F",
+  "client": "Rakurai",
+  "version": "4.3.2",
+  "stake_share": 0.002052982242314621,
+  "tpu_quic": "57.129.52.202:8002",
+  "gossip": "57.129.52.202:8000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463340640,
+  "leader": "5Cchr1XGEg7dbBXByV5NY2ad8jfxAM7HA3x8D56rq9Ux",
+  "client": "AgaveBam",
+  "version": "4.3.2",
+  "stake_share": 0.013229022997460269,
+  "tpu_quic": "63.254.180.11:5010",
+  "gossip": "184.35.36.96:37000",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463340708,
+  "leader": "ana2y2YvQ3ZPMwm6qhnN3nJoUSiT3qx5Pvetkq9xcfY",
+  "client": "Rakurai",
+  "version": "4.3.2",
+  "stake_share": 0.005703490269110272,
+  "tpu_quic": "45.77.64.138:8002",
+  "gossip": "45.77.64.138:8000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463340772,
+  "leader": "ana2y2YvQ3ZPMwm6qhnN3nJoUSiT3qx5Pvetkq9xcfY",
+  "client": "Rakurai",
+  "version": "4.3.2",
+  "stake_share": 0.005703490269110272,
+  "tpu_quic": "45.77.64.138:8002",
+  "gossip": "45.77.64.138:8000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463340828,
+  "leader": "E1r4Psq84tHfQ6aPTvvDka4U3u8zPVD7gEUrH25RdxHL",
+  "client": "JitoLabs",
+  "version": "4.3.2",
+  "stake_share": 0.024274430906557138,
+  "tpu_quic": "64.130.32.153:8002",
+  "gossip": "64.130.32.153:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463340940,
+  "leader": "CAo1dCGYrB6NhHh5xb1cGjUiu86iyCfMTENxgHumSve4",
+  "client": "HarmonicAgave",
+  "version": "4.3.2",
+  "stake_share": 0.02189678835379438,
+  "tpu_quic": "64.130.46.242:12291",
+  "gossip": "67.208.234.129:8000",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463341044,
+  "leader": "E1r4Psq84tHfQ6aPTvvDka4U3u8zPVD7gEUrH25RdxHL",
+  "client": "JitoLabs",
+  "version": "4.3.2",
+  "stake_share": 0.024274430906557138,
+  "tpu_quic": "64.130.32.153:8002",
+  "gossip": "64.130.32.153:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463341104,
+  "leader": "CAo1dCGYrB6NhHh5xb1cGjUiu86iyCfMTENxgHumSve4",
+  "client": "HarmonicAgave",
+  "version": "4.3.2",
+  "stake_share": 0.02189678835379438,
+  "tpu_quic": "64.130.46.242:12291",
+  "gossip": "67.208.234.129:8000",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463341196,
+  "leader": "5Cchr1XGEg7dbBXByV5NY2ad8jfxAM7HA3x8D56rq9Ux",
+  "client": "AgaveBam",
+  "version": "4.3.2",
+  "stake_share": 0.013229022997460269,
+  "tpu_quic": "63.254.180.11:5010",
+  "gossip": "184.35.36.96:37000",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463341276,
+  "leader": "5Cchr1XGEg7dbBXByV5NY2ad8jfxAM7HA3x8D56rq9Ux",
+  "client": "AgaveBam",
+  "version": "4.3.2",
+  "stake_share": 0.013229022997460269,
+  "tpu_quic": "63.254.180.11:5010",
+  "gossip": "184.35.36.96:37000",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463341332,
+  "leader": "E1r4Psq84tHfQ6aPTvvDka4U3u8zPVD7gEUrH25RdxHL",
+  "client": "JitoLabs",
+  "version": "4.3.2",
+  "stake_share": 0.024274430906557138,
+  "tpu_quic": "64.130.32.153:8002",
+  "gossip": "64.130.32.153:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463341444,
+  "leader": "CAo1dCGYrB6NhHh5xb1cGjUiu86iyCfMTENxgHumSve4",
+  "client": "HarmonicAgave",
+  "version": "4.3.2",
+  "stake_share": 0.02189678835379438,
+  "tpu_quic": "64.130.46.242:12291",
+  "gossip": "67.208.234.129:8000",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463341516,
+  "leader": "5Cchr1XGEg7dbBXByV5NY2ad8jfxAM7HA3x8D56rq9Ux",
+  "client": "AgaveBam",
+  "version": "4.3.2",
+  "stake_share": 0.013229022997460269,
+  "tpu_quic": "63.254.180.11:5010",
+  "gossip": "184.35.36.96:37000",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463341596,
+  "leader": "Awes4Tr6TX8JDzEhCZY2QVNimT6iD1zWHzf1vNyGvpLM",
+  "client": "HarmonicFiredancer",
+  "version": "26.10.5",
+  "stake_share": 0.016182999104916995,
+  "tpu_quic": "198.13.140.105:12351",
+  "gossip": "94.158.242.125:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463341736,
+  "leader": "Awes4Tr6TX8JDzEhCZY2QVNimT6iD1zWHzf1vNyGvpLM",
+  "client": "HarmonicFiredancer",
+  "version": "26.10.5",
+  "stake_share": 0.016182999104916995,
+  "tpu_quic": "198.13.140.105:12351",
+  "gossip": "94.158.242.125:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463341800,
+  "leader": "Awes4Tr6TX8JDzEhCZY2QVNimT6iD1zWHzf1vNyGvpLM",
+  "client": "HarmonicFiredancer",
+  "version": "26.10.5",
+  "stake_share": 0.016182999104916995,
+  "tpu_quic": "198.13.140.105:12351",
+  "gossip": "94.158.242.125:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463341916,
+  "leader": "9eGrDohdNTAo61DRHyfMuqKWXqYnA3i254Wiszxe8FoY",
+  "client": "Firedancer",
+  "version": "26.10.5",
+  "stake_share": 0.016283875959120522,
+  "tpu_quic": "86.54.152.246:9007",
+  "gossip": "86.54.152.246:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463341988,
+  "leader": "Awes4Tr6TX8JDzEhCZY2QVNimT6iD1zWHzf1vNyGvpLM",
+  "client": "HarmonicFiredancer",
+  "version": "26.10.5",
+  "stake_share": 0.016182999104916995,
+  "tpu_quic": "198.13.140.105:12351",
+  "gossip": "94.158.242.125:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463342040,
+  "leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+  "client": "FireBAM",
+  "version": "26.10.5",
+  "stake_share": 0.010348720840960597,
+  "tpu_quic": "198.13.140.227:5010",
+  "gossip": "64.130.40.243:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463342188,
+  "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+  "client": "Agave",
+  "version": "4.3.2",
+  "stake_share": 0.004333804264059741,
+  "tpu_quic": "5.199.172.176:12002",
+  "gossip": "5.199.172.176:12000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463342292,
+  "leader": "ana2y2YvQ3ZPMwm6qhnN3nJoUSiT3qx5Pvetkq9xcfY",
+  "client": "Rakurai",
+  "version": "4.3.2",
+  "stake_share": 0.005703490269110272,
+  "tpu_quic": "45.77.64.138:8002",
+  "gossip": "45.77.64.138:8000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463342376,
+  "leader": "E1r4Psq84tHfQ6aPTvvDka4U3u8zPVD7gEUrH25RdxHL",
+  "client": "JitoLabs",
+  "version": "4.3.2",
+  "stake_share": 0.024274430906557138,
+  "tpu_quic": "64.130.32.153:8002",
+  "gossip": "64.130.32.153:8001",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463342520,
+  "leader": "CAo1dCGYrB6NhHh5xb1cGjUiu86iyCfMTENxgHumSve4",
+  "client": "HarmonicAgave",
+  "version": "4.3.2",
+  "stake_share": 0.02189678835379438,
+  "tpu_quic": "64.130.46.242:12291",
+  "gossip": "67.208.234.129:8000",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463342784,
+  "leader": "Awes4Tr6TX8JDzEhCZY2QVNimT6iD1zWHzf1vNyGvpLM",
+  "client": "HarmonicFiredancer",
+  "version": "26.10.5",
+  "stake_share": 0.016182999104916995,
+  "tpu_quic": "198.13.140.105:12351",
+  "gossip": "94.158.242.125:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463342860,
+  "leader": "ana2y2YvQ3ZPMwm6qhnN3nJoUSiT3qx5Pvetkq9xcfY",
+  "client": "Rakurai",
+  "version": "4.3.2",
+  "stake_share": 0.005703490269110272,
+  "tpu_quic": "45.77.64.138:8002",
+  "gossip": "45.77.64.138:8000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463342932,
+  "leader": "5Cchr1XGEg7dbBXByV5NY2ad8jfxAM7HA3x8D56rq9Ux",
+  "client": "AgaveBam",
+  "version": "4.3.2",
+  "stake_share": 0.013229022997460269,
+  "tpu_quic": "63.254.180.11:5010",
+  "gossip": "184.35.36.96:37000",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463343328,
+  "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+  "client": "Agave",
+  "version": "4.3.2",
+  "stake_share": 0.004333804264059741,
+  "tpu_quic": "5.199.172.176:12002",
+  "gossip": "5.199.172.176:12000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463343984,
+  "leader": "A4hyMd3FyvUJSRafDUSwtLLaQcxRP4r1BRC9w2AJ1to2",
+  "client": "FireBAM",
+  "version": "26.10.5",
+  "stake_share": 0.0008193491953697034,
+  "tpu_quic": "64.130.52.171:5010",
+  "gossip": "198.13.134.14:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463344124,
+  "leader": "ana2y2YvQ3ZPMwm6qhnN3nJoUSiT3qx5Pvetkq9xcfY",
+  "client": "Rakurai",
+  "version": "4.3.2",
+  "stake_share": 0.005703490269110272,
+  "tpu_quic": "45.77.64.138:8002",
+  "gossip": "45.77.64.138:8000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463344240,
+  "leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+  "client": "FireBAM",
+  "version": "26.10.5",
+  "stake_share": 0.010348720840960597,
+  "tpu_quic": "198.13.140.227:5010",
+  "gossip": "64.130.40.243:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463344304,
+  "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+  "client": "Agave",
+  "version": "4.3.2",
+  "stake_share": 0.004333804264059741,
+  "tpu_quic": "5.199.172.176:12002",
+  "gossip": "5.199.172.176:12000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463344668,
+  "leader": "E3mDbFMr8yZcCAZx5wPUFCRmLX31u8Nnj4jPoPc54h3F",
+  "client": "Rakurai",
+  "version": "4.3.2",
+  "stake_share": 0.002052982242314621,
+  "tpu_quic": "57.129.52.202:8002",
+  "gossip": "57.129.52.202:8000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463344748,
+  "leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+  "client": "FireBAM",
+  "version": "26.10.5",
+  "stake_share": 0.010348720840960597,
+  "tpu_quic": "198.13.140.227:5010",
+  "gossip": "64.130.40.243:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463344932,
+  "leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+  "client": "FireBAM",
+  "version": "26.10.5",
+  "stake_share": 0.010348720840960597,
+  "tpu_quic": "198.13.140.227:5010",
+  "gossip": "64.130.40.243:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463345120,
+  "leader": "ana2y2YvQ3ZPMwm6qhnN3nJoUSiT3qx5Pvetkq9xcfY",
+  "client": "Rakurai",
+  "version": "4.3.2",
+  "stake_share": 0.005703490269110272,
+  "tpu_quic": "45.77.64.138:8002",
+  "gossip": "45.77.64.138:8000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463345192,
+  "leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+  "client": "FireBAM",
+  "version": "26.10.5",
+  "stake_share": 0.010348720840960597,
+  "tpu_quic": "198.13.140.227:5010",
+  "gossip": "64.130.40.243:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463345256,
+  "leader": "5Us18hLZPXJTS4QVuGSsUw137Dyd2tgBaem24Xsf5nBS",
+  "client": "Agave",
+  "version": "4.3.2",
+  "stake_share": 0.0027920772420116278,
+  "tpu_quic": "185.189.44.172:12002",
+  "gossip": "185.189.44.172:12000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463345584,
+  "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+  "client": "Agave",
+  "version": "4.3.2",
+  "stake_share": 0.004333804264059741,
+  "tpu_quic": "5.199.172.176:12002",
+  "gossip": "5.199.172.176:12000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463345644,
+  "leader": "E3mDbFMr8yZcCAZx5wPUFCRmLX31u8Nnj4jPoPc54h3F",
+  "client": "Rakurai",
+  "version": "4.3.2",
+  "stake_share": 0.002052982242314621,
+  "tpu_quic": "57.129.52.202:8002",
+  "gossip": "57.129.52.202:8000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463346364,
+  "leader": "ana2y2YvQ3ZPMwm6qhnN3nJoUSiT3qx5Pvetkq9xcfY",
+  "client": "Rakurai",
+  "version": "4.3.2",
+  "stake_share": 0.005703490269110272,
+  "tpu_quic": "45.77.64.138:8002",
+  "gossip": "45.77.64.138:8000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463346456,
+  "leader": "A4hyMd3FyvUJSRafDUSwtLLaQcxRP4r1BRC9w2AJ1to2",
+  "client": "FireBAM",
+  "version": "26.10.5",
+  "stake_share": 0.0008193491953697034,
+  "tpu_quic": "64.130.52.171:5010",
+  "gossip": "198.13.134.14:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463346684,
+  "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+  "client": "Agave",
+  "version": "4.3.2",
+  "stake_share": 0.004333804264059741,
+  "tpu_quic": "5.199.172.176:12002",
+  "gossip": "5.199.172.176:12000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463346768,
+  "leader": "A4hyMd3FyvUJSRafDUSwtLLaQcxRP4r1BRC9w2AJ1to2",
+  "client": "FireBAM",
+  "version": "26.10.5",
+  "stake_share": 0.0008193491953697034,
+  "tpu_quic": "64.130.52.171:5010",
+  "gossip": "198.13.134.14:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463346868,
+  "leader": "A4hyMd3FyvUJSRafDUSwtLLaQcxRP4r1BRC9w2AJ1to2",
+  "client": "FireBAM",
+  "version": "26.10.5",
+  "stake_share": 0.0008193491953697034,
+  "tpu_quic": "64.130.52.171:5010",
+  "gossip": "198.13.134.14:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463347128,
+  "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+  "client": "Agave",
+  "version": "4.3.2",
+  "stake_share": 0.004333804264059741,
+  "tpu_quic": "5.199.172.176:12002",
+  "gossip": "5.199.172.176:12000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463347196,
+  "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+  "client": "Agave",
+  "version": "4.3.2",
+  "stake_share": 0.004333804264059741,
+  "tpu_quic": "5.199.172.176:12002",
+  "gossip": "5.199.172.176:12000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463348304,
+  "leader": "5Us18hLZPXJTS4QVuGSsUw137Dyd2tgBaem24Xsf5nBS",
+  "client": "Agave",
+  "version": "4.3.2",
+  "stake_share": 0.0027920772420116278,
+  "tpu_quic": "185.189.44.172:12002",
+  "gossip": "185.189.44.172:12000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463349092,
+  "leader": "A4hyMd3FyvUJSRafDUSwtLLaQcxRP4r1BRC9w2AJ1to2",
+  "client": "FireBAM",
+  "version": "26.10.5",
+  "stake_share": 0.0008193491953697034,
+  "tpu_quic": "64.130.52.171:5010",
+  "gossip": "198.13.134.14:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463349760,
+  "leader": "E3mDbFMr8yZcCAZx5wPUFCRmLX31u8Nnj4jPoPc54h3F",
+  "client": "Rakurai",
+  "version": "4.3.2",
+  "stake_share": 0.002052982242314621,
+  "tpu_quic": "57.129.52.202:8002",
+  "gossip": "57.129.52.202:8000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463350400,
+  "leader": "E3mDbFMr8yZcCAZx5wPUFCRmLX31u8Nnj4jPoPc54h3F",
+  "client": "Rakurai",
+  "version": "4.3.2",
+  "stake_share": 0.002052982242314621,
+  "tpu_quic": "57.129.52.202:8002",
+  "gossip": "57.129.52.202:8000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463350516,
+  "leader": "A4hyMd3FyvUJSRafDUSwtLLaQcxRP4r1BRC9w2AJ1to2",
+  "client": "FireBAM",
+  "version": "26.10.5",
+  "stake_share": 0.0008193491953697034,
+  "tpu_quic": "64.130.52.171:5010",
+  "gossip": "198.13.134.14:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463350688,
+  "leader": "A4hyMd3FyvUJSRafDUSwtLLaQcxRP4r1BRC9w2AJ1to2",
+  "client": "FireBAM",
+  "version": "26.10.5",
+  "stake_share": 0.0008193491953697034,
+  "tpu_quic": "64.130.52.171:5010",
+  "gossip": "198.13.134.14:8001",
+  "tpu_is_remote": true
+ },
+ {
+  "window_start": 463351688,
+  "leader": "E3mDbFMr8yZcCAZx5wPUFCRmLX31u8Nnj4jPoPc54h3F",
+  "client": "Rakurai",
+  "version": "4.3.2",
+  "stake_share": 0.002052982242314621,
+  "tpu_quic": "57.129.52.202:8002",
+  "gossip": "57.129.52.202:8000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463351784,
+  "leader": "5Us18hLZPXJTS4QVuGSsUw137Dyd2tgBaem24Xsf5nBS",
+  "client": "Agave",
+  "version": "4.3.2",
+  "stake_share": 0.0027920772420116278,
+  "tpu_quic": "185.189.44.172:12002",
+  "gossip": "185.189.44.172:12000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463354072,
+  "leader": "5Us18hLZPXJTS4QVuGSsUw137Dyd2tgBaem24Xsf5nBS",
+  "client": "Agave",
+  "version": "4.3.2",
+  "stake_share": 0.0027920772420116278,
+  "tpu_quic": "185.189.44.172:12002",
+  "gossip": "185.189.44.172:12000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463357768,
+  "leader": "5Us18hLZPXJTS4QVuGSsUw137Dyd2tgBaem24Xsf5nBS",
+  "client": "Agave",
+  "version": "4.3.2",
+  "stake_share": 0.0027920772420116278,
+  "tpu_quic": "185.189.44.172:12002",
+  "gossip": "185.189.44.172:12000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463358504,
+  "leader": "5Us18hLZPXJTS4QVuGSsUw137Dyd2tgBaem24Xsf5nBS",
+  "client": "Agave",
+  "version": "4.3.2",
+  "stake_share": 0.0027920772420116278,
+  "tpu_quic": "185.189.44.172:12002",
+  "gossip": "185.189.44.172:12000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463360232,
+  "leader": "5Us18hLZPXJTS4QVuGSsUw137Dyd2tgBaem24Xsf5nBS",
+  "client": "Agave",
+  "version": "4.3.2",
+  "stake_share": 0.0027920772420116278,
+  "tpu_quic": "185.189.44.172:12002",
+  "gossip": "185.189.44.172:12000",
+  "tpu_is_remote": false
+ },
+ {
+  "window_start": 463360836,
+  "leader": "5Us18hLZPXJTS4QVuGSsUw137Dyd2tgBaem24Xsf5nBS",
+  "client": "Agave",
+  "version": "4.3.2",
+  "stake_share": 0.0027920772420116278,
+  "tpu_quic": "185.189.44.172:12002",
+  "gossip": "185.189.44.172:12000",
+  "tpu_is_remote": false
+ }
+]

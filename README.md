@@ -12,8 +12,30 @@ LIVE=1 docker compose up                  # live: same, but probes are sent (ask
 LIVE=1 YES=1 MAX_SPEND_SOL=0.05 docker compose up   # live, unattended, hard spend cap
 ```
 
-Results of the submitted run: [`data/<run>/REPORT.md`](data/) and [`REPORT.md`](REPORT.md) (written
-analysis, measurement dates, *what went wrong*).
+**Written analysis, measurement dates and "what went wrong": [`REPORT.md`](REPORT.md).**
+Generated tables for both live runs pooled: [`data/combined/REPORT.md`](data/combined/REPORT.md);
+per run: [`data/run-20261030T145010Z/`](data/run-20261030T145010Z/),
+[`data/run-20261030T152829Z/`](data/run-20261030T152829Z/).
+
+### Results at a glance
+Two live mainnet runs on 2026-10-30 (after Alpenglow), 184 leader windows of 17 validators across
+8 client families, 2 208 probes, 2 188 landed, total spend 0.0352 SOL.  Pooled per family
+(independent probes, within-block permutation test):
+
+| client family (gossip `clientId`) | ordering inside a block | τ fee (p) | τ send (p) |
+|---|---|---|---|
+| Agave (vanilla) | arrival order, partial | −0.04 (0.69) | **0.32 (0.002)** |
+| JitoLabs (Jito-Solana) | arrival order, partial | −0.07 (0.51) | **0.26 (0.007)** |
+| Rakurai | arrival order, partial | 0.13 (0.24) | **0.33 (0.002)** |
+| AgaveBam | priority fee, partial | **0.37 (<0.001)** | 0.16 (0.13) |
+| FireBAM | priority fee, partial | **0.34 (0.009)** | 0.16 (0.23) |
+| Firedancer | priority fee, partial | **0.27 (<0.001)** | 0.11 (0.23) |
+| HarmonicAgave | priority fee, partial | **0.31 (<0.001)** | 0.23 (0.015) |
+| HarmonicFiredancer | no rule detected | 0.18 (0.054) | 0.12 (0.22) |
+
+No family sorts a block strictly (τ = 1); the rules hold *partially* and vary between validators of
+the same family.  Priority fee did not change whether or how fast a probe landed.  Details,
+per-validator results and caveats: [`REPORT.md`](REPORT.md).
 
 ---
 
@@ -54,7 +76,8 @@ The memo only makes transactions unique and lets anyone find them in the block.
 ### Leader schedule, leader windows and leader types
 * `getLeaderSchedule` gives each validator's slots for the epoch; leaders own **4-slot windows**
   (verified on the live schedule: 105 669 runs of exactly 4 slots, the rest are 8/12 = same leader
-  twice in a row).  We fire one batch per window, at the window's first slot.
+  twice in a row).  We fire one batch per window: at the window's first slot in run 1, one slot
+  before it in run 2 (`SEND_OFFSET_SLOTS=-1`, chosen after run 1 showed the send→inclusion latency).
 * The *client / fork* of each validator comes from gossip (`getClusterNodes` → `clientId`,
   `version`), joined with stake from `getVoteAccounts`.  Snapshot at the time of our run (staked
   validators only):
@@ -86,7 +109,10 @@ The memo only makes transactions unique and lets anyone find them in the block.
 (≈ 215 ms on mainnet during our measurements, post-Alpenglow).  Probes are built and signed 3 slots
 before the window and fired when the estimated slot reaches the window start.  Right after firing
 we read the RPC's slot again (`rpc_slot_after_fire` in `batches.jsonl`) so the timing error is
-measured, not assumed.
+measured, not assumed.  Measured result: firing at the window's first slot, **no** probe landed in
+slot 0 of the window (run 1: slot 1: 44, slot 2: 333, slot 3: 187, after the window: 95); firing one
+slot early (run 2): slot 0: 95, slot 1: 720, slot 2: 426, slot 3: 132, after: 156.  The public-RPC path
+therefore takes roughly 1.5–2 slots (≈ 300–450 ms) from send to inclusion.
 
 ### The path of a transaction, and what that means for the data
 ```
@@ -116,9 +142,10 @@ this tool ──HTTPS sendTransaction──▶ RPC node ──QUIC──▶ TPU 
 ### Competition inside the block
 Our probes share each block with hundreds of other transactions.  We never claim anything from the
 absolute position of a probe; the tests use only the *relative* order of our own probes in the same
-block.  The fee levels deliberately span the market: from 0 (≈ 27 % of non-vote mainnet
-transactions pay no priority fee) through the median (~4 000 µlamports/CU) up to above the 99th
-percentile (~15 M µlamports/CU), measured from the blocks we fetched.
+block.  The fee levels deliberately span the market: from 0 (24 % of non-vote mainnet
+transactions in the fetched blocks pay no priority fee) through the median (~17 000 µlamports per
+cost unit) to the 99th percentile (~16.5 M), measured over 424 979 transactions in the blocks we
+fetched.
 As supplementary evidence, for every block in every targeted window we also compute the Spearman
 correlation between position and fee-per-cost-unit over **all** transactions (Jito-tip transactions
 flagged), which shows whether a block as a whole looks fee-sorted.
@@ -170,7 +197,9 @@ LIVE=1 docker compose up                            # live run (send ~0.1 SOL to
 docker compose run --rm ordering sweep              # return sub-payer lamports (also done automatically)
 docker compose run --rm ordering analyze data/<run> # recompute analysis from raw data
 ```
-Without Docker: `./scripts/run_native.sh <same commands>` (uses `uv` to provision Python 3.12).
+Without Docker: `./scripts/run_native.sh <same commands>` (uses `uv` to provision Python 3.12) —
+this is how the two submitted live runs were executed (macOS, arm64).
+Pool several runs: `python -m ordering combine data/run-A data/run-B --out data/combined`.
 
 Useful knobs (env or flags): `PER_CLIENT`, `WINDOWS_PER_VALIDATOR`, `CLIENTS`, `SEND_RPC_URL`,
 `SEND_OFFSET_SLOTS`, `CU_LIMIT`, `SEED`.  `python -m ordering plan` prints the plan without running.
@@ -180,7 +209,8 @@ Useful knobs (env or flags): `PER_CLIENT`, `WINDOWS_PER_VALIDATOR`, `CLIENTS`, `
   is where we checked that we hit the windows (timing error recorded per batch).
 * **mainnet simulation** – `simulateTransaction` (sigVerify off, nothing sent) to confirm the probe
   executes and to size the CU limit (memo cost grows ~400 CU per byte, so the memo is kept short).
-* **mainnet live** – with the spend cap.
+* **mainnet live** – with the spend cap: run 1 (56 windows, 0.0107 SOL) and run 2 (128 windows,
+  0.0245 SOL), together 0.0352 SOL.
 * devnet/testnet end-to-end runs were not possible: both clusters' RPC faucets are closed
   (`requestAirdrop` → *"The RPC faucet is closed"*); see "what went wrong" in the report.
 
@@ -229,7 +259,7 @@ ordering/
   spend.py     persistent worst-case spend ledger with hard cap
   collect.py   signature statuses, slot leaders, block fetch → compact per-block tables
   analyze.py   Kendall τ, within-block permutation tests, verdicts, supplementary block analysis
-  report.py    REPORT.md renderer
-  __main__.py  CLI (keygen, wallet, plan, run, collect, analyze, sweep)
+  report.py    REPORT.md renderer (single run or pooled runs)
+  __main__.py  CLI (keygen, wallet, plan, run, collect, analyze, combine, sweep)
 tests/         unit tests for the statistics and the spend cap (python -m unittest)
 ```

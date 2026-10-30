@@ -1,0 +1,7 @@
+{
+ "start_lamports": 159249465,
+ "end_lamports": 134713325,
+ "actual_spend_lamports": 24536140,
+ "ledger_worst_case_lamports": 24671440,
+ "note": "end balance read after the final `sweep` (the run's own sweep stopped on one sub-payer at the rent-exempt minimum, see REPORT.md)"
+}
