@@ -14,7 +14,7 @@ class RpcError(Exception):
 
 
 class Rpc:
-    def __init__(self, url: str, timeout: float = 60.0, max_retries: int = 6):
+    def __init__(self, url: str, timeout: float = 60.0, max_retries: int = 10):
         self.url = url
         self.client = httpx.AsyncClient(timeout=timeout, http2=False)
         self.max_retries = max_retries
@@ -39,8 +39,12 @@ class Rpc:
             if r.status_code == 429 or r.status_code >= 500:
                 if not retry or attempt == self.max_retries - 1:
                     r.raise_for_status()
-                await asyncio.sleep(delay)
-                delay *= 2
+                try:
+                    wait = float(r.headers.get("retry-after", delay))
+                except ValueError:
+                    wait = delay
+                await asyncio.sleep(min(30.0, max(wait, delay)))
+                delay = min(30.0, delay * 2)
                 continue
             j = r.json()
             if "error" in j:

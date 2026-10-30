@@ -136,28 +136,39 @@ async def main():
             if not a.yes:
                 if input("type YES to send real transactions: ").strip() != "YES":
                     sys.exit("aborted")
-        await exp.run(plan, main_kp)
-        if a.live:
-            print("waiting 40 s for finalization before collecting...")
-            await asyncio.sleep(40)
-        await collect(rpc, run_dir)
-        an.analyze(run_dir)
-        report.write(run_dir)
-        if a.live:
-            print("returning sub-payer balances to the wallet...")
-            for pk, b, sig in await exp.sweep(main_kp):
-                print(f"  swept {b/1e9:.6f} SOL from {pk}")
-            end = (await rpc.call("getBalance", [str(main_kp.pubkey())]))["value"]
-            cluster.save({"start_lamports": bal, "end_lamports": end,
-                          "actual_spend_lamports": bal - end,
-                          "ledger_worst_case_lamports": exp.ledger.spent},
-                         os.path.join(run_dir, "spend_actual.json"))
-            print(f"actual spend: {(bal-end)/1e9:.6f} SOL (cap {a.max_spend_sol})")
+        try:
+            await exp.run(plan, main_kp)
+            if a.live:
+                print("waiting 40 s for finalization before collecting...")
+                await asyncio.sleep(40)
+            try:
+                await collect(rpc, run_dir)
+                an.analyze(run_dir)
+                report.write(run_dir)
+            except Exception as e:  # noqa: BLE001 - raw data is already on disk
+                print(f"collect/analyze failed ({e!r}); raw data is saved, re-run: collect {run_dir}")
+        finally:
+            if a.live:
+                await _finish_live(rpc, exp, main_kp, bal, run_dir, a)
         print(f"done. report: {os.path.join(run_dir, 'REPORT.md')}")
     finally:
         await rpc.close()
         if send_rpc is not rpc:
             await send_rpc.close()
+
+
+async def _finish_live(rpc, exp, main_kp, bal, run_dir, a):
+    """Always runs after a live run, even if collection failed: return funds."""
+    if True:
+        print("returning sub-payer balances to the wallet...")
+        for pk, b, sig in await exp.sweep(main_kp):
+            print(f"  swept {b/1e9:.6f} SOL from {pk}")
+        end = (await rpc.call("getBalance", [str(main_kp.pubkey())]))["value"]
+        cluster.save({"start_lamports": bal, "end_lamports": end,
+                      "actual_spend_lamports": bal - end,
+                      "ledger_worst_case_lamports": exp.ledger.spent},
+                     os.path.join(run_dir, "spend_actual.json"))
+        print(f"actual spend: {(bal-end)/1e9:.6f} SOL (cap {a.max_spend_sol})")
 
 
 if __name__ == "__main__":

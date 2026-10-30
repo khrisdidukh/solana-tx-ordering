@@ -64,7 +64,7 @@ async def statuses(rpc, sigs):
     return out
 
 
-async def collect(rpc, run_dir, log=print, concurrency=3):
+async def collect(rpc, run_dir, log=print, concurrency=1, pause_s=0.4):
     probes = read_jsonl(os.path.join(run_dir, "probes.jsonl"))
     batches = read_jsonl(os.path.join(run_dir, "batches.jsonl"))
     live = [p for p in probes if p.get("rpc_sig") or p.get("send_error") in (None,)]
@@ -93,7 +93,7 @@ async def collect(rpc, run_dir, log=print, concurrency=3):
 
     probe_sigs = set(sigs)
     sem = asyncio.Semaphore(concurrency)
-    skipped = []
+    skipped, failed = [], []
 
     async def one(slot):
         path = os.path.join(bdir, f"{slot}.json.gz")
@@ -102,9 +102,14 @@ async def collect(rpc, run_dir, log=print, concurrency=3):
         async with sem:
             try:
                 blk = await rpc.call("getBlock", [slot, BLOCK_OPTS])
-            except RpcError as e:
+            except RpcError as e:  # skipped slot / not available
                 skipped.append({"slot": slot, "leader": leaders.get(slot), "error": e.err})
                 return
+            except Exception as e:  # noqa: BLE001 - rate limit / network: keep going, re-run collect later
+                failed.append({"slot": slot, "error": repr(e)[:200]})
+                return
+            finally:
+                await asyncio.sleep(pause_s)  # public RPC getBlock rate limit
         if blk is None:
             skipped.append({"slot": slot, "leader": leaders.get(slot), "error": "null"})
             return
@@ -114,5 +119,6 @@ async def collect(rpc, run_dir, log=print, concurrency=3):
     await asyncio.gather(*(one(s) for s in slots))
     with open(os.path.join(run_dir, "skipped_slots.json"), "w") as f:
         json.dump(skipped, f, indent=1)
-    log(f"blocks fetched: {len(slots) - len(skipped)}, skipped/unavailable: {len(skipped)}")
+    log(f"blocks fetched: {len(slots) - len(skipped) - len(failed)}, skipped/unavailable: {len(skipped)}"
+        + (f", failed (re-run `collect {run_dir}` to retry): {len(failed)}" if failed else ""))
     return len(slots)
