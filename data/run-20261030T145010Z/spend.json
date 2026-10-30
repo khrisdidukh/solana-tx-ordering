@@ -1,0 +1,291 @@
+{
+ "cap_lamports": 50000000,
+ "spent_lamports": 10776880,
+ "entries": [
+  {
+   "t": 1793371822.859173,
+   "lamports": 5000,
+   "why": "funding tx fee"
+  },
+  {
+   "t": 1793371834.890531,
+   "lamports": 192355,
+   "why": "batch 0 (worst case)"
+  },
+  {
+   "t": 1793371846.7717068,
+   "lamports": 192355,
+   "why": "batch 1 (worst case)"
+  },
+  {
+   "t": 1793371859.672811,
+   "lamports": 192355,
+   "why": "batch 2 (worst case)"
+  },
+  {
+   "t": 1793371873.1518688,
+   "lamports": 192355,
+   "why": "batch 3 (worst case)"
+  },
+  {
+   "t": 1793371885.536003,
+   "lamports": 192355,
+   "why": "batch 4 (worst case)"
+  },
+  {
+   "t": 1793371897.40685,
+   "lamports": 192355,
+   "why": "batch 5 (worst case)"
+  },
+  {
+   "t": 1793371908.277617,
+   "lamports": 192355,
+   "why": "batch 6 (worst case)"
+  },
+  {
+   "t": 1793371929.0306811,
+   "lamports": 192355,
+   "why": "batch 7 (worst case)"
+  },
+  {
+   "t": 1793371940.350812,
+   "lamports": 192355,
+   "why": "batch 8 (worst case)"
+  },
+  {
+   "t": 1793371951.38513,
+   "lamports": 192355,
+   "why": "batch 9 (worst case)"
+  },
+  {
+   "t": 1793371970.973376,
+   "lamports": 192355,
+   "why": "batch 10 (worst case)"
+  },
+  {
+   "t": 1793371983.032526,
+   "lamports": 192355,
+   "why": "batch 11 (worst case)"
+  },
+  {
+   "t": 1793372000.1603022,
+   "lamports": 192355,
+   "why": "batch 12 (worst case)"
+  },
+  {
+   "t": 1793372014.068562,
+   "lamports": 192355,
+   "why": "batch 13 (worst case)"
+  },
+  {
+   "t": 1793372029.2093482,
+   "lamports": 192355,
+   "why": "batch 14 (worst case)"
+  },
+  {
+   "t": 1793372045.208817,
+   "lamports": 192355,
+   "why": "batch 15 (worst case)"
+  },
+  {
+   "t": 1793372056.5355258,
+   "lamports": 192355,
+   "why": "batch 16 (worst case)"
+  },
+  {
+   "t": 1793372068.514796,
+   "lamports": 192355,
+   "why": "batch 17 (worst case)"
+  },
+  {
+   "t": 1793372081.4071958,
+   "lamports": 192355,
+   "why": "batch 18 (worst case)"
+  },
+  {
+   "t": 1793372095.04931,
+   "lamports": 192355,
+   "why": "batch 19 (worst case)"
+  },
+  {
+   "t": 1793372110.222646,
+   "lamports": 192355,
+   "why": "batch 20 (worst case)"
+  },
+  {
+   "t": 1793372128.567372,
+   "lamports": 192355,
+   "why": "batch 21 (worst case)"
+  },
+  {
+   "t": 1793372149.020446,
+   "lamports": 192355,
+   "why": "batch 22 (worst case)"
+  },
+  {
+   "t": 1793372161.637532,
+   "lamports": 192355,
+   "why": "batch 23 (worst case)"
+  },
+  {
+   "t": 1793372173.6917849,
+   "lamports": 192355,
+   "why": "batch 24 (worst case)"
+  },
+  {
+   "t": 1793372185.9006238,
+   "lamports": 192355,
+   "why": "batch 25 (worst case)"
+  },
+  {
+   "t": 1793372199.402555,
+   "lamports": 192355,
+   "why": "batch 26 (worst case)"
+  },
+  {
+   "t": 1793372210.989494,
+   "lamports": 192355,
+   "why": "batch 27 (worst case)"
+  },
+  {
+   "t": 1793372221.943139,
+   "lamports": 192355,
+   "why": "batch 28 (worst case)"
+  },
+  {
+   "t": 1793372234.024284,
+   "lamports": 192355,
+   "why": "batch 29 (worst case)"
+  },
+  {
+   "t": 1793372246.7519941,
+   "lamports": 192355,
+   "why": "batch 30 (worst case)"
+  },
+  {
+   "t": 1793372262.792927,
+   "lamports": 192355,
+   "why": "batch 31 (worst case)"
+  },
+  {
+   "t": 1793372276.146115,
+   "lamports": 192355,
+   "why": "batch 32 (worst case)"
+  },
+  {
+   "t": 1793372297.181768,
+   "lamports": 192355,
+   "why": "batch 33 (worst case)"
+  },
+  {
+   "t": 1793372325.43293,
+   "lamports": 192355,
+   "why": "batch 34 (worst case)"
+  },
+  {
+   "t": 1793372344.62568,
+   "lamports": 192355,
+   "why": "batch 35 (worst case)"
+  },
+  {
+   "t": 1793372357.81536,
+   "lamports": 192355,
+   "why": "batch 36 (worst case)"
+  },
+  {
+   "t": 1793372373.111097,
+   "lamports": 192355,
+   "why": "batch 37 (worst case)"
+  },
+  {
+   "t": 1793372393.653356,
+   "lamports": 192355,
+   "why": "batch 38 (worst case)"
+  },
+  {
+   "t": 1793372415.9156532,
+   "lamports": 192355,
+   "why": "batch 39 (worst case)"
+  },
+  {
+   "t": 1793372435.328774,
+   "lamports": 192355,
+   "why": "batch 40 (worst case)"
+  },
+  {
+   "t": 1793372449.165944,
+   "lamports": 192355,
+   "why": "batch 41 (worst case)"
+  },
+  {
+   "t": 1793372460.484436,
+   "lamports": 192355,
+   "why": "batch 42 (worst case)"
+  },
+  {
+   "t": 1793372482.376388,
+   "lamports": 192355,
+   "why": "batch 43 (worst case)"
+  },
+  {
+   "t": 1793372501.864107,
+   "lamports": 192355,
+   "why": "batch 44 (worst case)"
+  },
+  {
+   "t": 1793372532.633004,
+   "lamports": 192355,
+   "why": "batch 45 (worst case)"
+  },
+  {
+   "t": 1793372563.979125,
+   "lamports": 192355,
+   "why": "batch 46 (worst case)"
+  },
+  {
+   "t": 1793372583.1300962,
+   "lamports": 192355,
+   "why": "batch 47 (worst case)"
+  },
+  {
+   "t": 1793372626.6901,
+   "lamports": 192355,
+   "why": "batch 48 (worst case)"
+  },
+  {
+   "t": 1793372643.138072,
+   "lamports": 192355,
+   "why": "batch 49 (worst case)"
+  },
+  {
+   "t": 1793372655.0970821,
+   "lamports": 192355,
+   "why": "batch 50 (worst case)"
+  },
+  {
+   "t": 1793372688.0437279,
+   "lamports": 192355,
+   "why": "batch 51 (worst case)"
+  },
+  {
+   "t": 1793372738.040582,
+   "lamports": 192355,
+   "why": "batch 52 (worst case)"
+  },
+  {
+   "t": 1793372777.329953,
+   "lamports": 192355,
+   "why": "batch 53 (worst case)"
+  },
+  {
+   "t": 1793372873.397878,
+   "lamports": 192355,
+   "why": "batch 54 (worst case)"
+  },
+  {
+   "t": 1793372993.870896,
+   "lamports": 192355,
+   "why": "batch 55 (worst case)"
+  }
+ ]
+}

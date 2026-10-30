@@ -1,0 +1,32 @@
+{
+ "started_utc": "20261030T145010Z",
+ "live": true,
+ "rpc": "https://api.mainnet-beta.solana.com",
+ "send_rpc": "https://api.mainnet-beta.solana.com",
+ "max_spend_sol": 0.05,
+ "cu_limit": 5000,
+ "levels": [
+  0,
+  1000,
+  10000,
+  50000,
+  200000,
+  1000000,
+  4000000,
+  16000000
+ ],
+ "seed": 20261030,
+ "send_offset_slots": 0.0,
+ "rpc_version": {
+  "feature-set": 3383571666,
+  "solana-core": "4.3.2"
+ },
+ "epoch": {
+  "absoluteSlot": 463325009,
+  "blockHeight": 441347333,
+  "epoch": 1072,
+  "slotIndex": 221009,
+  "slotsInEpoch": 432000,
+  "transactionCount": 564469175989
+ }
+}

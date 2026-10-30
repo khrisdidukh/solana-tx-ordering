@@ -1,0 +1,7 @@
+{
+ "start_lamports": 169908190,
+ "end_lamports": 159249465,
+ "actual_spend_lamports": 10658725,
+ "ledger_worst_case_lamports": 10776880,
+ "note": "end balance read after the separate `sweep` command (the run itself stopped in the collect step, see REPORT.md)"
+}
